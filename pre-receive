@@ -1,0 +1,119 @@
+#!/bin/sh
+# PHP CodeSniffer pre-receive hook for git
+
+#PHPCS_BIN="/usr/bin/phpcs"
+#PHPCS_CODING_STANDARD="Joomla"
+
+# Use coding standart dir from local repo
+PHPCS_DIR_LOCAL=0
+
+TMP_DIR=$(mktemp -d --tmpdir phpcs-pre-receive-hook.XXXXXXXX)
+mkdir "$TMP_DIR/source"
+
+# Parse config
+CONFIG_FILE=$(dirname $0)/config
+if [ -e $CONFIG_FILE ]; then
+	. $CONFIG_FILE
+fi
+
+# Read config file and assign variables
+#if [ "$PHPCS_BIN" != "" ]; then
+#	IGNORE="--ignore=$PHPCS_BIN"
+#else
+#	IGNORE=""
+#fi
+
+if [ "$PHPCS_CODING_STANDARD" != "" ]; then
+	CODING_STANDARD="$PHPCS_CODING_STANDARD"
+else
+	CODING_STANDARD=""
+fi
+
+if [ "$PHPCS_IGNORE" != "" ]; then
+	IGNORE="--ignore=$PHPCS_IGNORE"
+else
+	IGNORE=""
+fi
+
+if [ "$PHPCS_ENCODING" != "" ]; then
+	ENCODING="--encoding=$PHPCS_ENCODING"
+else
+	ENCODING=""
+fi
+
+if [ "$PHPCS_IGNORE_WARNINGS" != "1" ]; then
+	IGNORE_WARNINGS=""
+else
+	IGNORE_WARNINGS="-n"
+fi
+
+# Simple check if code sniffer is set up correctly
+if [ ! -x $PHPCS_BIN ]; then
+echo "PHP CodeSniffer bin not found or executable -> $PHPCS_BIN"
+	exit 1
+fi
+
+# Prepare our standart rules
+if [ $PHPCS_DIR_LOCAL = 1 ]; then
+	mkdir "$TMP_DIR/standart"
+	git archive HEAD $PHPCS_CODING_STANDARD | tar -x -C "$TMP_DIR/standart"
+	PHPCS_CODING_STANDARD="$TMP_DIR/standart/$PHPCS_CODING_STANDARD"
+fi
+
+# Gathers all errors and sent to output at end
+ERRORS=""
+RETVAL=0
+
+echo ""
+echo "\033[0;33m############  Running PHP Syntax & Code Sniffer Checks   ############\033[1;37m"
+
+while read oldrev newrev ref;
+do
+	list=$(git diff-tree --name-only -r $oldrev..$newrev | grep -e '.php' -e '.phtml')
+	for file in ${list}; do
+		# dirty hack for create dir tree
+		mkdir -p $(dirname "$TMP_DIR/source/$file")
+		# Skip deleted files
+		git show ${newrev}:${file} 1>"$TMP_DIR/source/$file" 2>/dev/null  || continue
+		echo "Processing file: $TMP_DIR/source/$file"
+
+		#OUTPUT=$($PHPCS_BIN -s --standard=$PHPCS_CODING_STANDARD $ENCODING $IGNORE_WARNINGS -p $IGNORE "$TMP_DIR/source/$file")
+		OUTPUT=$($PHPCS_BIN -s --standard=$PHPCS_CODING_STANDARD --report-summary $ENCODING $IGNORE_WARNINGS -p $IGNORE "$TMP_DIR/source/$file")
+
+		if [ "$?" -ne "0" ]; then
+			ERRORS="${ERRORS}
+${OUTPUT}"
+			RETVAL=1
+		fi
+
+		OUTPUT2=$(php -l "$TMP_DIR/source/$file")
+
+		if [ "$?" -ne "0" ]; then
+			ERRORS="${ERRORS}
+\033[0;31m $OUTPUT2 \033[0;39m"
+			RETVAL=1
+		fi
+	done
+done
+
+# Cleanup
+rm -rf $TMP_DIR
+
+if [ -n "$ERRORS" ]; then
+	echo "\033[0;37m $ERRORS \033[0;38m"
+	echo "\033[0;31m"
+	echo "**************************************************************************************"
+	echo "		:( :( Pre-receive Hook Failed: Please fix errors shown before pushing changes."
+	echo "**************************************************************************************"
+	echo "\033[39m"
+else
+	echo "\033[0;32m"
+	echo "**************************************************************************************"
+	echo "		:) ;) Do your happy dance! <php -l> & <phpcs> checks passed!"
+	toilet -f mono9 -F metal "You rock!"
+	echo "**************************************************************************************"
+	echo "\033[39m"
+fi
+
+exit $RETVAL
+

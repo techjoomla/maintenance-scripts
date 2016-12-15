@@ -1,0 +1,100 @@
+#!/bin/sh
+#title           :pre-commit.sh
+#description     :This script stops user to commit files if it does not satisfy codesniffer filter.
+#author          :Mukta
+#date            :2014-4-11
+#usage           :add the script in .git/hooks folder. Script should have executable permissions.
+#==================================================================================================
+
+PROJECT=`php -r "echo dirname(dirname(dirname(realpath('$0'))));"`
+STAGED_FILES_CMD=`git diff --cached --name-only --diff-filter=ACMR HEAD | grep \\\\.php`
+
+# Parse config
+CONFIG_FILE=$(dirname $0)/config
+if [ -e $CONFIG_FILE ]; then
+    . $CONFIG_FILE
+fi
+
+# Assign files to SFILES variable
+SFILES=${SFILES:-$STAGED_FILES_CMD}
+
+for FILE in $SFILES
+do
+	FILES="$FILES $PROJECT/$FILE"
+done
+
+# Read config file and assign variables
+if [ "$PHPCS_IGNORE" != "" ]; then
+    IGNORE="--ignore=$PHPCS_IGNORE"
+else
+    IGNORE=""
+fi
+
+if [ "$PHPCS_ENCODING" != "" ]; then
+    ENCODING="--encoding=$PHPCS_ENCODING"
+else
+    ENCODING=""
+fi
+
+if [ "$PHPCS_IGNORE_WARNINGS" != "1" ]; then
+    IGNORE_WARNINGS=""
+else
+    IGNORE_WARNINGS="-n"
+fi
+
+if [ "$PHPCS_CODING_STANDARD" != "" ]; then
+    CODING_STANDARD="$PHPCS_CODING_STANDARD"
+else
+    CODING_STANDARD=""
+fi
+
+if [ "$FILES" != "" ]
+then
+	echo "\033[0;33m############  Running PHP Syntax Check      ##########\033[1;37m"
+	for PHP_FILE in $SFILES
+	do
+		OUTPUT=$(php -l $PHP_FILE)
+
+		# if last command successful. Answer is 0 which means 'yes'.
+		if [ $? != 0 ]
+		then
+			#echo "\033[0;37m $ERRORS \033[0;38m"
+			echo "\033[0;31m"
+			echo "**************************************************************************************"
+			echo $OUTPUT
+			echo "PHP syntax errors detected. Please fix syntax errors to push changes."
+			echo "**************************************************************************************"
+			echo "\033[39m"
+			exit 1
+		else
+			echo $OUTPUT
+		fi
+	done
+fi
+
+if [ "$FILES" != "" ]
+then
+	echo "\033[0;32m############  All good with PHP syntax!     ############\033[0;39m"
+	echo
+	echo "\033[0;33m############  Running Code Sniffer Checks   ############\033[1;37m"
+
+	#/usr/bin/phpcs --standard=Joomla --encoding=utf-8 -n -p $FILES
+	$PHPCS_BIN --standard=$CODING_STANDARD --report-summary $ENCODING $IGNORE_WARNINGS -p $IGNORE $FILES
+
+	# if last command successful. Answer is 0 which means 'yes'.
+	if [ $? != 0 ]
+	then
+		echo "\033[0;37m $ERRORS \033[0;38m"
+
+		echo "\033[0;31m"
+		echo "**************************************************************************************"
+		echo "		:( :( Pre-commit Hook Failed: Please fix PHPCS errors to push changes."
+		echo "**************************************************************************************"
+		echo "\033[39m"
+		exit 1
+	else
+		echo "\033[0;32m############  Do your happy dance! PHPCS check passed!  ############\033[0;39m"
+	fi
+fi
+
+exit $?
