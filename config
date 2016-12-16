@@ -196,7 +196,8 @@ components/com_payplans/*,
 components/com_sh404sef/*,
 components/com_surveyforce/*,
 components/com_zoo/*,
-components/com_zoolanders/*,"
+components/com_zoolanders/*,
+media/com_easysocial/*,"
 
 IGNORE_3PD_JOOMLA_MODULES="modules/mod_jacontentslider/*,
 modules/mod_easyblogarchive/*,
@@ -260,6 +261,7 @@ plugins/search/easyblog/*,
 plugins/sh404sefcore/*,
 plugins/sh404sefextplugins/,
 plugins/survey/*,
+plugins/system/admintools/*,
 plugins/system/advancedmodules/*,
 plugins/system/akeebaupdatecheck/*,
 plugins/system/articlesanywhere/*,
