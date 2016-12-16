@@ -378,7 +378,7 @@ plugins/user/rsticketspro/*,"
 IGNORE_3PD_JOOMLA_LIBRARIES="libraries/allediaframework/*,
 libraries/cms/*,
 libraries/f0f/*,
-libraries/fof/,
+libraries/fof/*,
 libraries/fof30/*,
 libraries/gantry/*,
 libraries/joomlatools/*,
