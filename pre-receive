@@ -69,7 +69,10 @@ echo "\033[0;33m############  Running PHP Syntax & Code Sniffer Checks   #######
 
 while read oldrev newrev ref;
 do
-	list=$(git diff-tree --name-only -r $oldrev..$newrev | grep -e '.php' -e '.phtml')
+	#list=$(git diff-tree --name-only -r $oldrev..$newrev | grep -e '.php' -e '.phtml')
+	list=$(git diff-tree --name-only -r $oldrev..$newrev | egrep '\.(php|phtml)$')
+	# echo ${list}
+
 	for file in ${list}; do
 		# dirty hack for create dir tree
 		mkdir -p $(dirname "$TMP_DIR/source/$file")
