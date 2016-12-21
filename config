@@ -181,7 +181,8 @@ tmpl/*,"
 
 # Media folders
 IGNORE_MEDIA_FOLDERS_ALL="media/com_easysocial/*,
-media/com_easydiscuss/*,"
+media/com_easydiscuss/*,
+media/zoo/*,"
 
 # 3PD -> third party developers
 IGNORE_3PD_JOOMLA_COMPONENTS="administrator/components/com_regularlabsmanager/*,
@@ -375,6 +376,7 @@ plugins/system/sliders/*,
 plugins/system/sourcerer/*,
 plugins/system/tabs/*,
 plugins/system/zoo_zlelements/*,
+plugins/system/zlframework/zlframework/*,
 plugins/user/easydiscussprofile/*,
 plugins/user/easydiscussusers/*,
 plugins/user/easysocial/*,
@@ -423,7 +425,11 @@ install.php,
 script.*.php,
 script.php,"
 
-IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="components/com_vi/helpers/hfdvr/avc_settings.php"
+IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="components/com_vi/helpers/hfdvr/avc_settings.php,"
+
+IGNORE_SERVICE_PROJECTS_COMPONENTS="components/com_osian/*,"
+
+IGNORE_SERVICE_PROJECTS_PLUGINS="plugins/system/savedata/"
 
 # ^^^ IMP - do not add trailing comma
 
@@ -447,8 +453,11 @@ PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_3PD_FRAMEWORKS}${IGNORE_3PD_LIBRARIES}${IGN
 # Techjoomla extensions
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_TECHJOOMLA_LAYOUTS}${IGNORE_TECHJOOMLA_SCRIPTS}
 
-# Service prjects
+# Service projects
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_SERVICE_PROJECTS_SPECIAL_FILES}
+
+# Service project components
+PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_SERVICE_PROJECTS_COMPONENTS}${IGNORE_SERVICE_PROJECTS_PLUGINS}
 
 # Remove \n
 PHPCS_IGNORE=$(echo $PHPCS_IGNORE|tr -d '\n')
