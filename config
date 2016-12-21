@@ -308,6 +308,7 @@ modules/mod_news_event_latest/*,
 modules/mod_ostimer/*,"
 
 IGNORE_3PD_JOOMLA_PLUGINS="plugins/authentication/easysocial/*,
+plugins/authentication/masteruser/*,
 plugins/content/doclink/*,
 plugins/content/easydiscuss/*,
 plugins/content/easysocial/*,
