@@ -305,7 +305,7 @@ modules/mod_ostimer/*,"
 
 IGNORE_3PD_JOOMLA_PLUGINS="plugins/authentication/easysocial/*,
 plugins/content/doclink/*,
-plugins/content/easydiscuss/*
+plugins/content/easydiscuss/*,
 plugins/content/easysocial/*,
 plugins/content/jce/*,
 plugins/content/jw_disqus/*,
