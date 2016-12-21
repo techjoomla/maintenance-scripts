@@ -49,21 +49,6 @@ administrator/components/com_search/*,
 administrator/components/com_tags/*,
 administrator/components/com_templates/*,
 administrator/components/com_users/*,
-administrator/modules/mod_custom/*,
-administrator/modules/mod_feed/*,
-administrator/modules/mod_latest/*,
-administrator/modules/mod_logged/*,
-administrator/modules/mod_login/*,
-administrator/modules/mod_menu/*,
-administrator/modules/mod_multilangstatus/*,
-administrator/modules/mod_popular/*,
-administrator/modules/mod_quickicon/*,
-administrator/modules/mod_stats_admin/*,
-administrator/modules/mod_status/*,
-administrator/modules/mod_submenu/*,
-administrator/modules/mod_title/*,
-administrator/modules/mod_toolbar/*,
-administrator/modules/mod_version/*,
 components/com_ajax/*,
 components/com_banners/*,
 components/com_config/*,
@@ -81,7 +66,22 @@ components/com_tags/*,
 components/com_users/*,
 components/com_wrapper/*,"
 
-IGNORE_CORE_JOOMLA_MODULES="modules/mod_articles_archive/*,
+IGNORE_CORE_JOOMLA_MODULES="administrator/modules/mod_custom/*,
+administrator/modules/mod_feed/*,
+administrator/modules/mod_latest/*,
+administrator/modules/mod_logged/*,
+administrator/modules/mod_login/*,
+administrator/modules/mod_menu/*,
+administrator/modules/mod_multilangstatus/*,
+administrator/modules/mod_popular/*,
+administrator/modules/mod_quickicon/*,
+administrator/modules/mod_stats_admin/*,
+administrator/modules/mod_status/*,
+administrator/modules/mod_submenu/*,
+administrator/modules/mod_title/*,
+administrator/modules/mod_toolbar/*,
+administrator/modules/mod_version/*,
+modules/mod_articles_archive/*,
 modules/mod_articles_categories/*,
 modules/mod_articles_category/*,
 modules/mod_articles_latest/*,
@@ -178,6 +178,10 @@ IGNORE_LAYOUT_FILES="layouts/*,
 templates/*,
 themes/*,
 tmpl/*,"
+
+# Media folders
+IGNORE_MEDIA_FOLDERS_ALL="media/com_easysocial/*,
+media/com_easydiscuss/*,"
 
 # 3PD -> third party developers
 IGNORE_3PD_JOOMLA_COMPONENTS="administrator/components/com_regularlabsmanager/*,
@@ -427,6 +431,9 @@ IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="components/com_vi/helpers/hfdvr/avc_setti
 PHPCS_IGNORE=${IGNORE_CORE_JOOMLA_COMPONENTS}${IGNORE_CORE_JOOMLA_MODULES}${IGNORE_CORE_JOOMLA_PLUGINS}
 # Core joomla other + lib + layout files
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_JOOMLA_LIBRARIES}${IGNORE_CORE_JOOMLA_OTHER_FILES}${IGNORE_LAYOUT_FILES}
+
+# Media folders
+PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_MEDIA_FOLDERS_ALL}
 
 # 3rd party joomla extensions
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_3PD_JOOMLA_COMPONENTS}${IGNORE_3PD_JOOMLA_MODULES}${IGNORE_3PD_JOOMLA_PLUGINS}
