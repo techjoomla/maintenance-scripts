@@ -405,6 +405,8 @@ hdfvr_mp4/*,
 hdfvr/*,"
 
 IGNORE_3PD_CLASSES="emogrifier.php,
+emogrifier_new.php,
+emogrifier_old.php,
 gifresizer.php,
 s3_lib.php,
 scorm_1.2.js.php,
