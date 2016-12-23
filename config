@@ -308,7 +308,8 @@ modules/mod_logman/*,
 modules/mod_news_event_latest/*,
 modules/mod_ostimer/*,"
 
-IGNORE_3PD_JOOMLA_PLUGINS="plugins/authentication/easysocial/*,
+IGNORE_3PD_JOOMLA_PLUGINS="plugins/ajax/remoteimages/*,
+plugins/authentication/easysocial/*,
 plugins/authentication/masteruser/*,
 plugins/content/doclink/*,
 plugins/content/easydiscuss/*,
@@ -390,6 +391,7 @@ libraries/fof30/*,
 libraries/gantry/*,
 libraries/joomlatools/*,
 libraries/legacy/*,
+libraries/techjoomla/remotestorage/*,
 libraries/regularlabs/*,
 libraries/vendor/*,"
 
