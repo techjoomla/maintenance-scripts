@@ -415,7 +415,12 @@ scorm_1.2.js.php,
 scorm_1.3.js.php,
 scormlib.php,"
 
+IGNORE_TECHJOOMLA_COMPONENTS="components/com_tjlms/libraries/scorm/api.php,
+components/com_tjlms/libraries/scorm/subs.php,
+components/com_tjlms/libraries/scorm/titanium.php,"
+
 IGNORE_TECHJOOMLA_PLUGINS="plugins/system/qtcamazon_easycheckout/signature/*,
+plugins/techjoomlaAPI/Yahoo/plug_techjoomlaAPI_yahoo/lib/OAuth.php,
 plugins/tjevents/plug_tjevents_adobeconnect/plug_tjevents_adobeconnect/libraries/*,
 plugins/tjvideo/kpoint/assets/*,"
 
@@ -457,7 +462,7 @@ PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_3PD_JOOMLA_LIBRARIES}${IGNORE_3PD_JOOMLA_LA
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_3PD_FRAMEWORKS}${IGNORE_3PD_LIBRARIES}${IGNORE_3PD_CLASSES}
 
 # Techjoomla extensions
-PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_TECHJOOMLA_LAYOUTS}${IGNORE_TECHJOOMLA_SCRIPTS}
+PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_TECHJOOMLA_COMPONENTS}${IGNORE_TECHJOOMLA_LAYOUTS}${IGNORE_TECHJOOMLA_SCRIPTS}
 
 # Service projects
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_SERVICE_PROJECTS_SPECIAL_FILES}
