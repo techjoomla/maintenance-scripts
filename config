@@ -182,6 +182,7 @@ tmpl/*,"
 IGNORE_3PD_JOOMLA_COMPONENTS="components/com_admintools/*,
 components/com_advancedmodules/*,
 components/com_akeeba/*,
+components/com_cjlib/*,
 components/com_communityquiz/*,
 components/com_creativeimageslider/*,
 components/com_easyblog/*,
