@@ -169,7 +169,9 @@ plugins/user/profile/*,"
 IGNORE_JOOMLA_LIBRARIES="libraries/joomla/*,
 libraries/php-encryption/*,
 libraries/phputf8/*,
-libraries/vendor/joomla/*,"
+libraries/vendor/joomla/*,
+libraries/idna_convert/*,
+libraries/phpass/*,"
 
 IGNORE_CORE_JOOMLA_OTHER_FILES="bin/*,
 cache/*,
@@ -448,7 +450,8 @@ gifresizer.php,
 s3_lib.php,
 scorm_1.2.js.php,
 scorm_1.3.js.php,
-scormlib.php,"
+scormlib.php,
+configuration.php,"
 
 IGNORE_TECHJOOMLA_COMPONENTS="components/com_tjlms/libraries/scorm/api.php,
 components/com_tjlms/libraries/scorm/subs.php,
