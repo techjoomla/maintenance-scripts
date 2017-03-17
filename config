@@ -439,7 +439,6 @@ plugins/user/jfbconnectuser/*,
 plugins/user/rsticketspro/*,
 plugins/xmap/*,"
 
-
 IGNORE_3PD_JOOMLA_LIBRARIES="libraries/allediaframework/*,
 libraries/cms/*,
 libraries/f0f/*,
