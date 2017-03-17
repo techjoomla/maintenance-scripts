@@ -352,6 +352,7 @@ plugins/content/jfbccontent/*,
 plugins/content/jw_disqus/*,
 plugins/content/komento/*,
 plugins/content/rokinjectmodule/*,
+plugins/content/rsform/*,
 plugins/content/seoglossary/*,
 plugins/content/surveyforce/*,
 plugins/easyblog/autoarticle/*,
@@ -436,8 +437,7 @@ plugins/user/easydiscussusers/*,
 plugins/user/easysocial/*,
 plugins/user/jfbconnectuser/*,
 plugins/user/rsticketspro/*,
-plugins/xmap/*,
-plugins/content/rsform/*,"
+plugins/xmap/*,"
 
 
 IGNORE_3PD_JOOMLA_LIBRARIES="libraries/allediaframework/*,
