@@ -500,7 +500,11 @@ plugins/search/acmanager/*,"
 IGNORE_TECHJOOMLA_LAYOUTS="layouts_bs2/*,
 layouts_bs3/*,
 views_bs2/*,
-views_bs3/*,"
+views_bs3/*,
+layout/horizontal/bs2/corefilters.php,
+layout/horizontal/bs3/corefilters.php,
+layout/vertical/bs2/corefilters.php,
+layout/vertical/bs3/corefilters.php,"
 
 IGNORE_TECHJOOMLA_SCRIPTS="install.*.php,
 install.php,
