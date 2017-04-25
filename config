@@ -3,7 +3,7 @@
 # Description     : Config for phpcs parameters to work with pre-commit.sh
 # Author          : Mukta, Manoj
 # Date            : 2014-04-11
-# Last Updated    : 2016-12-08
+# Last Updated    : 2017-04-25
 # Usage           : Add the file on the same location where pre-commit.sh exists. ie. under .git/hooks
 # ==================================================================================================
 
@@ -173,12 +173,14 @@ libraries/vendor/joomla/*,
 libraries/idna_convert/*,
 libraries/phpass/*,"
 
-IGNORE_CORE_JOOMLA_OTHER_FILES="bin/*,
+IGNORE_CORE_JOOMLA_OTHER_FILES="administrator/manifests/*,
+bin/*,
 cache/*,
 cli/*,
-temp/*,
+language/*,
 log/*,
-logs/*,"
+logs/*,
+temp/*,"
 
 IGNORE_LAYOUT_FILES="layouts/*,
 templates/*,
@@ -188,6 +190,7 @@ tmpl/*,"
 # Media folders
 IGNORE_MEDIA_FOLDERS_ALL="media/com_easysocial/*,
 media/com_easydiscuss/*,
+media/editors/*,
 media/nnframework/*,
 media/regularlabs/*,
 media/zoo/*,"
@@ -322,13 +325,15 @@ modules/mod_gri_todo/*,
 modules/mod_icb_todo/*,
 modules/mod_jamasshead/*,
 modules/mod_jamasthead/*,
+modules/mod_jfbcsocialshare/*,
 modules/mod_komento_activities/*,
 modules/mod_latestseoglossary/*,
 modules/mod_logo/*,
 modules/mod_logman/*,
 modules/mod_news_event_latest/*,
-modules/mod_post_to_twitter/*,
 modules/mod_ostimer/*,
+modules/mod_post_to_twitter/*,
+modules/mod_res_cir_countdown/*,
 modules/mod_searchseoglossary/*,
 modules/mod_scsocialstream/*,
 modules/mod_scsocialfindus/*,
@@ -449,6 +454,7 @@ libraries/gantry/*,
 libraries/gjfields/*,
 libraries/jsearchindex/*,
 libraries/joomlatools/*,
+libraries/joomlatools-components/*,
 libraries/koowa/*,
 libraries/legacy/*,
 libraries/tcpdf/*,
