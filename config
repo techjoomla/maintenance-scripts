@@ -483,8 +483,10 @@ components/com_acmanager/*,
 components/com_tjlms/libraries/scorm/api.php,
 components/com_tjlms/libraries/scorm/subs.php,
 components/com_tjlms/libraries/scorm/titanium.php,
-components/com_jticketing/admin/email_template.php,
-"
+components/com_jticketing/layout/horizontal/bs2/corefilters.php,
+components/com_jticketing/layout/horizontal/bs3/corefilters.php,
+components/com_jticketing/layout/vertical/bs2/corefilters.php,
+components/com_jticketing/layout/vertical/bs3/corefilters.php,"
 
 IGNORE_TECHJOOMLA_PLUGINS="plugins/api/*,
 plugins/system/qtcamazon_easycheckout/signature/*,
