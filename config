@@ -482,11 +482,7 @@ IGNORE_TECHJOOMLA_COMPONENTS="components/com_api/*,
 components/com_acmanager/*,
 components/com_tjlms/libraries/scorm/api.php,
 components/com_tjlms/libraries/scorm/subs.php,
-components/com_tjlms/libraries/scorm/titanium.php,
-components/com_jticketing/layout/horizontal/bs2/corefilters.php,
-components/com_jticketing/layout/horizontal/bs3/corefilters.php,
-components/com_jticketing/layout/vertical/bs2/corefilters.php,
-components/com_jticketing/layout/vertical/bs3/corefilters.php,"
+components/com_tjlms/libraries/scorm/titanium.php,"
 
 IGNORE_TECHJOOMLA_PLUGINS="plugins/api/*,
 plugins/system/qtcamazon_easycheckout/signature/*,
@@ -498,7 +494,11 @@ plugins/search/acmanager/*,"
 IGNORE_TECHJOOMLA_LAYOUTS="layouts_bs2/*,
 layouts_bs3/*,
 views_bs2/*,
-views_bs3/*,"
+views_bs3/*,
+layout/horizontal/bs2/corefilters.php,
+layout/horizontal/bs3/corefilters.php,
+layout/vertical/bs2/corefilters.php,
+layout/vertical/bs3/corefilters.php,"
 
 IGNORE_TECHJOOMLA_SCRIPTS="install.*.php,
 install.php,
