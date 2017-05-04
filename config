@@ -485,7 +485,9 @@ scorm_1.3.js.php,
 scormlib.php,
 configuration.php,"
 
-IGNORE_TECHJOOMLA_COMPONENTS="components/com_api/*,
+IGNORE_TECHJOOMLA_COMPONENTS=" administrator/components/com_advsearch/*,
+components/com_advsearch/*,
+components/com_api/*,
 components/com_acmanager/*,
 components/com_tjlms/libraries/scorm/api.php,
 components/com_tjlms/libraries/scorm/subs.php,
