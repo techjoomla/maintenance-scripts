@@ -462,7 +462,8 @@ libraries/tcpdf/*,
 libraries/techjoomla/remotestorage/*,
 libraries/regularlabs/*,
 libraries/sourcecoast/*,
-libraries/vendor/*,"
+libraries/vendor/*,
+libraries/windwalker/*"
 
 IGNORE_3PD_JOOMLA_LAYOUTS="widget.*.php,"
 
