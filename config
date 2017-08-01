@@ -177,6 +177,7 @@ plugins/user/profile/*,"
 IGNORE_JOOMLA_LIBRARIES="libraries/joomla/*,
 libraries/php-encryption/*,
 libraries/phputf8/*,
+libraries/vendor/composer/*,
 libraries/vendor/joomla/*,
 libraries/idna_convert/*,
 libraries/phpass/*,"
