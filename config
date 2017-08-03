@@ -177,6 +177,7 @@ plugins/user/profile/*,"
 IGNORE_JOOMLA_LIBRARIES="libraries/joomla/*,
 libraries/php-encryption/*,
 libraries/phputf8/*,
+libraries/vendor/composer/*,
 libraries/vendor/joomla/*,
 libraries/idna_convert/*,
 libraries/phpass/*,"
@@ -524,6 +525,9 @@ install.php,
 script.*.php,
 script.php,"
 
+IGNORE_TECJOOMLA_SPECIAL_FILES="com_jbolo/site/helpers/helper.php,
+components/com_jbolo/helpers/helper.php,"
+
 IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="components/com_ekcontent/defines.php,
 components/com_vi/helpers/hfdvr/avc_settings.php,"
 
@@ -555,7 +559,7 @@ PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_3PD_JOOMLA_LIBRARIES}${IGNORE_3PD_JOOMLA_LA
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_3PD_FRAMEWORKS}${IGNORE_3PD_LIBRARIES}${IGNORE_3PD_CLASSES}
 
 # Techjoomla extensions
-PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_TECHJOOMLA_COMPONENTS}${IGNORE_TECHJOOMLA_PLUGINS}${IGNORE_TECHJOOMLA_LAYOUTS}${IGNORE_TECHJOOMLA_SCRIPTS}
+PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_TECHJOOMLA_COMPONENTS}${IGNORE_TECHJOOMLA_PLUGINS}${IGNORE_TECHJOOMLA_LAYOUTS}${IGNORE_TECHJOOMLA_SCRIPTS}${IGNORE_TECJOOMLA_SPECIAL_FILES}
 
 # Service projects
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_SERVICE_PROJECTS_SPECIAL_FILES}
