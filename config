@@ -209,6 +209,7 @@ IGNORE_3PD_JOOMLA_COMPONENTS="
 administrator/components/com_komento/*,
 administrator/components/com_payplans/*,
 administrator/components/com_postinstall/*,
+administrator/components/com_rbinstaller/*,
 administrator/components/com_regularlabsmanager/*,
 administrator/components/com_surveyforce/*,
 administrator/components/com_widgetkit/*,
