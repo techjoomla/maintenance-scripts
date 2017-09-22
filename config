@@ -508,7 +508,8 @@ laravel/*,"
 IGNORE_3PD_LIBRARIES="dompdf/*,
 hdfvr_flash/*,
 hdfvr_mp4/*,
-hdfvr/*,"
+hdfvr/*,
+money/*,"
 
 IGNORE_3PD_CLASSES="emogrifier.php,
 emogrifier_new.php,
