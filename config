@@ -180,7 +180,8 @@ libraries/phputf8/*,
 libraries/vendor/composer/*,
 libraries/vendor/joomla/*,
 libraries/idna_convert/*,
-libraries/phpass/*,"
+libraries/phpass/*,
+libraries/src/*,"
 
 IGNORE_CORE_JOOMLA_OTHER_FILES="administrator/manifests/*,
 bin/*,
