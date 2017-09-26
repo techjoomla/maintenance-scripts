@@ -246,8 +246,8 @@ components/com_zoolanders/*,"
 
 IGNORE_3PD_JOOMLA_MODULES="administrator/modules/mod_cachecleaner/*,
 administrator/modules/mod_easysocial_info/*,
-modules/mod_content_categorylist/*,
 modules/mod_bt_contentslider/*,
+modules/mod_content_categorylist/*,
 modules/mod_docman_categories/*,
 modules/mod_docman_documents/*,
 modules/mod_jacontentslider/*,
