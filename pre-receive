@@ -67,6 +67,8 @@ RETVAL=0
 echo ""
 echo "\033[0;33m############  Running PHP Syntax & Code Sniffer Checks   ############\033[1;37m"
 
+phpcs --version
+
 while read oldrev newrev ref;
 do
 	#list=$(git diff-tree --name-only -r $oldrev..$newrev | grep -e '.php' -e '.phtml')
@@ -80,8 +82,8 @@ do
 		git show ${newrev}:${file} 1>"$TMP_DIR/source/$file" 2>/dev/null  || continue
 		echo "Processing file: $TMP_DIR/source/$file"
 
-		#OUTPUT=$($PHPCS_BIN -s --standard=$PHPCS_CODING_STANDARD $ENCODING $IGNORE_WARNINGS -p $IGNORE "$TMP_DIR/source/$file")
-		OUTPUT=$($PHPCS_BIN -s --standard=$PHPCS_CODING_STANDARD --report-summary $ENCODING $IGNORE_WARNINGS -p $IGNORE "$TMP_DIR/source/$file")
+		OUTPUT=$($PHPCS_BIN -s --standard=$PHPCS_CODING_STANDARD $ENCODING $IGNORE_WARNINGS -p $IGNORE "$TMP_DIR/source/$file")
+		#OUTPUT=$($PHPCS_BIN -s --standard=$PHPCS_CODING_STANDARD --report-summary $ENCODING $IGNORE_WARNINGS -p $IGNORE "$TMP_DIR/source/$file")
 
 		if [ "$?" -ne "0" ]; then
 			ERRORS="${ERRORS}
@@ -89,13 +91,13 @@ ${OUTPUT}"
 			RETVAL=1
 		fi
 
-		OUTPUT2=$(php -l "$TMP_DIR/source/$file")
+# 		OUTPUT2=$(php -l "$TMP_DIR/source/$file")
 
-		if [ "$?" -ne "0" ]; then
-			ERRORS="${ERRORS}
-\033[0;31m $OUTPUT2 \033[0;39m"
-			RETVAL=1
-		fi
+# 		if [ "$?" -ne "0" ]; then
+# 			ERRORS="${ERRORS}
+# \033[0;31m $OUTPUT2 \033[0;39m"
+# 			RETVAL=1
+# 		fi
 	done
 done
 
@@ -112,11 +114,11 @@ if [ -n "$ERRORS" ]; then
 else
 	echo "\033[0;32m"
 	echo "**************************************************************************************"
-	echo "		:) ;) Do your happy dance! <php -l> & <phpcs> checks passed!"
+#	echo "		:) ;) Do your happy dance! <php -l> & <phpcs> checks passed!"
+	echo "		:) ;) Do your happy dance! <phpcs> check passed!"
 	toilet -f mono9 -F metal "You rock!"
 	echo "**************************************************************************************"
 	echo "\033[39m"
 fi
 
 exit $RETVAL
-
