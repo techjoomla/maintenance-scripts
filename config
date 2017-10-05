@@ -177,9 +177,11 @@ plugins/user/profile/*,"
 IGNORE_JOOMLA_LIBRARIES="libraries/joomla/*,
 libraries/php-encryption/*,
 libraries/phputf8/*,
+libraries/vendor/composer/*,
 libraries/vendor/joomla/*,
 libraries/idna_convert/*,
-libraries/phpass/*,"
+libraries/phpass/*,
+libraries/src/*,"
 
 IGNORE_CORE_JOOMLA_OTHER_FILES="administrator/manifests/*,
 bin/*,
@@ -205,10 +207,13 @@ media/zoo/*,"
 
 # 3PD -> third party developers
 IGNORE_3PD_JOOMLA_COMPONENTS="administrator/components/com_regularlabsmanager/*,
+administrator/components/com_surveyforce/*,
 components/com_admintools/*,
 components/com_advancedmodules/*,
 components/com_akeeba/*,
+components/com_akeebasubs/*,
 components/com_cjlib/*,
+components/com_cmc/*,
 components/com_communityquiz/*,
 components/com_creativeimageslider/*,
 components/com_db8options/*,
@@ -249,6 +254,7 @@ modules/mod_easyblogarchive/*,
 modules/mod_easyblogbio/*,
 modules/mod_easyblogcalendar/*,
 modules/mod_easyblogcategories/*,
+modules/mod_easyblogcustomfieldsearch/*,
 modules/mod_easyblogimagewall/*,
 modules/mod_easybloglatestblogger/*,
 modules/mod_easybloglatestblogs/*,
@@ -352,9 +358,13 @@ modules/mod_sp_tweet/*,
 modules/mod_ultimatetwittersidebarfeed/*,
 modules/mod_yj_pop_login/*,
 modules/mod_yj_pop_login_enco/*,
-modules/mod_yj_pop_login_icb/*,"
+modules/mod_yj_pop_login_icb/*,
+modules/mod_zooitem/*,
+modules/mod_zooquickicon/*,"
 
 IGNORE_3PD_JOOMLA_PLUGINS="plugins/ajax/remoteimages/*,
+plugins/akeebasubs/agreetotos/*,
+plugins/akeebasubs/reseller/*,
 plugins/authentication/easysocial/*,
 plugins/authentication/jfbconnectauth/*,
 plugins/authentication/masteruser/*,
@@ -370,6 +380,7 @@ plugins/content/rokinjectmodule/*,
 plugins/content/rsform/*,
 plugins/content/seoglossary/*,
 plugins/content/surveyforce/*,
+plugins/content/zooshortcode/*,
 plugins/easyblog/autoarticle/*,
 plugins/editors-xtd/articlesanywhere/*,
 plugins/editors-xtd/doclink/*,
@@ -390,6 +401,7 @@ plugins/finder/easysocialpages/*,
 plugins/finder/easysocialphotos/*,
 plugins/finder/easysocialusers/*,
 plugins/finder/easysocialvideos/*,
+plugins/finder/zoosmartsearch/*,
 plugins/koowa/logman/*,
 plugins/logman/*,
 plugins/opengraph/*,
@@ -406,6 +418,7 @@ plugins/search/easyblog/*,
 plugins/search/easydiscuss/*,
 plugins/search/rsticketsprocontent/*,
 plugins/search/seoglossary/*,
+plugins/search/zoosearch/*,
 plugins/sh404sefcore/*,
 plugins/sh404sefextplugins/,
 plugins/socialprofiles/customdb/*,
@@ -422,7 +435,11 @@ plugins/system/backuponupdate/*,
 plugins/system/cachecleaner/*,
 plugins/system/cdnforjoomla/*,
 plugins/system/componentsanywhere/*,
+plugins/system/creativeimageslider/*,
 plugins/system/easysocial/*,
+plugins/system/easysocialautologin/*,
+plugins/system/ecom360akeeba/*,
+plugins/system/ecom360virtuemart/*,
 plugins/system/jce/*,
 plugins/system/jch_optimize/*,
 plugins/system/jfbcsystem/*,
@@ -442,14 +459,20 @@ plugins/system/osmylicensesmanager/*,
 plugins/system/ossystem/*,
 plugins/system/regularlabs/*,
 plugins/system/rsfpcountry/*,
+plugins/system/rsfprecaptchav2/*,
 plugins/system/rsticketspro/*,
 plugins/system/rsticketsprocron/*,
 plugins/system/scheduler/*,
+plugins/system/sh404sef/*,
+plugins/system/shlib/*,
+plugins/system/shmobile/*,
 plugins/system/sliders/*,
 plugins/system/sourcerer/*,
 plugins/system/tabs/*,
 plugins/system/zlframework/zlframework/*,
 plugins/system/zoo_zlelements/*,
+plugins/system/zooevent/*,
+plugins/user/easyblogusers/*,
 plugins/user/easydiscussprofile/*,
 plugins/user/easydiscussusers/*,
 plugins/user/easysocial/*,
@@ -459,6 +482,7 @@ plugins/xmap/*,"
 
 IGNORE_3PD_JOOMLA_LIBRARIES="libraries/allediaframework/*,
 libraries/cms/*,
+libraries/compojoom/*,
 libraries/f0f/*,
 libraries/fof/*,
 libraries/fof30/*,
@@ -485,7 +509,8 @@ laravel/*,"
 IGNORE_3PD_LIBRARIES="dompdf/*,
 hdfvr_flash/*,
 hdfvr_mp4/*,
-hdfvr/*,"
+hdfvr/*,
+money/*,"
 
 IGNORE_3PD_CLASSES="emogrifier.php,
 emogrifier_new.php,
@@ -524,6 +549,9 @@ install.php,
 script.*.php,
 script.php,"
 
+IGNORE_TECJOOMLA_SPECIAL_FILES="com_jbolo/site/helpers/helper.php,
+components/com_jbolo/helpers/helper.php,"
+
 IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="components/com_ekcontent/defines.php,
 components/com_vi/helpers/hfdvr/avc_settings.php,"
 
@@ -555,7 +583,7 @@ PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_3PD_JOOMLA_LIBRARIES}${IGNORE_3PD_JOOMLA_LA
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_3PD_FRAMEWORKS}${IGNORE_3PD_LIBRARIES}${IGNORE_3PD_CLASSES}
 
 # Techjoomla extensions
-PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_TECHJOOMLA_COMPONENTS}${IGNORE_TECHJOOMLA_PLUGINS}${IGNORE_TECHJOOMLA_LAYOUTS}${IGNORE_TECHJOOMLA_SCRIPTS}
+PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_TECHJOOMLA_COMPONENTS}${IGNORE_TECHJOOMLA_PLUGINS}${IGNORE_TECHJOOMLA_LAYOUTS}${IGNORE_TECHJOOMLA_SCRIPTS}${IGNORE_TECJOOMLA_SPECIAL_FILES}
 
 # Service projects
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_SERVICE_PROJECTS_SPECIAL_FILES}
