@@ -206,9 +206,7 @@ media/regularlabs/*,
 media/zoo/*,"
 
 # 3PD -> third party developers
-IGNORE_3PD_JOOMLA_COMPONENTS="administrator/components/com_regularlabsmanager/*,
-administrator/components/com_surveyforce/*,
-components/com_admintools/*,
+IGNORE_3PD_JOOMLA_COMPONENTS="components/com_admintools/*,
 components/com_advancedmodules/*,
 components/com_akeeba/*,
 components/com_akeebasubs/*,
@@ -235,12 +233,15 @@ components/com_komento/*,
 components/com_logman/*,
 components/com_osmap/*,
 components/com_personalprofiler/*,
+components/com_rbinstaller/*,
+components/com_regularlabsmanager/*,
 components/com_rsticketspro/*,
 components/com_payplans/*,
 components/com_rsform/*,
 components/com_seoglossary/*,
 components/com_sh404sef/*,
 components/com_surveyforce/*,
+com_widgetkit/*,
 components/com_zoo/*,
 components/com_zoolanders/*,"
 
