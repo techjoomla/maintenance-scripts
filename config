@@ -3,7 +3,7 @@
 # Description     : Config for phpcs parameters to work with pre-commit.sh
 # Author          : Mukta, Manoj
 # Date            : 2014-04-11
-# Last Updated    : 2017-04-25
+# Last Updated    : 2017-10-05
 # Usage           : Add the file on the same location where pre-commit.sh exists. ie. under .git/hooks
 # ==================================================================================================
 
@@ -174,13 +174,14 @@ plugins/user/contactcreator/*,
 plugins/user/joomla/*,
 plugins/user/profile/*,"
 
-IGNORE_JOOMLA_LIBRARIES="libraries/joomla/*,
+IGNORE_JOOMLA_LIBRARIES="libraries/idna_convert/*,
+libraries/joomla/*,
+libraries/phpass/*,
 libraries/php-encryption/*,
 libraries/phputf8/*,
 libraries/vendor/composer/*,
 libraries/vendor/joomla/*,
-libraries/idna_convert/*,
-libraries/phpass/*,"
+libraries/src/*,"
 
 IGNORE_CORE_JOOMLA_OTHER_FILES="administrator/manifests/*,
 bin/*,
@@ -205,14 +206,8 @@ media/regularlabs/*,
 media/zoo/*,"
 
 # 3PD -> third party developers
-IGNORE_3PD_JOOMLA_COMPONENTS="
-administrator/components/com_komento/*,
-administrator/components/com_payplans/*,
-administrator/components/com_postinstall/*,
-administrator/components/com_rbinstaller/*,
-administrator/components/com_regularlabsmanager/*,
+IGNORE_3PD_JOOMLA_COMPONENTS="administrator/components/com_regularlabsmanager/*,
 administrator/components/com_surveyforce/*,
-administrator/components/com_widgetkit/*,
 components/com_admintools/*,
 components/com_advancedmodules/*,
 components/com_akeeba/*,
@@ -240,20 +235,18 @@ components/com_komento/*,
 components/com_logman/*,
 components/com_osmap/*,
 components/com_personalprofiler/*,
-components/com_postinstall/*,
 components/com_rsticketspro/*,
-components/com_rbinstaller/*,
 components/com_payplans/*,
 components/com_rsform/*,
 components/com_seoglossary/*,
 components/com_sh404sef/*,
 components/com_surveyforce/*,
-components/com_widgetkit/*,
 components/com_zoo/*,
 components/com_zoolanders/*,"
 
 IGNORE_3PD_JOOMLA_MODULES="administrator/modules/mod_cachecleaner/*,
 administrator/modules/mod_easysocial_info/*,
+modules/mod_bt_contentslider/*,
 modules/mod_content_categorylist/*,
 modules/mod_docman_categories/*,
 modules/mod_docman_documents/*,
@@ -286,7 +279,7 @@ modules/mod_easyblogtopblogs/*,
 modules/mod_easyblogwelcome/*,
 modules/mod_easysocial_albums/*,
 modules/mod_easysocial_calendar/*,
-modules/mod_easysocial_dropdown_menu*,
+modules/mod_easysocial_dropdown_menu/*,
 modules/mod_easysocial_easyblog_posts/*,
 modules/mod_easysocial_events/*,
 modules/mod_easysocial_leaderboard/*,
@@ -428,10 +421,10 @@ plugins/search/rsticketsprocontent/*,
 plugins/search/seoglossary/*,
 plugins/search/zoosearch/*,
 plugins/sh404sefcore/*,
-plugins/sh404sefextplugins/,
+plugins/sh404sefextplugins/*,
 plugins/socialprofiles/customdb/*,
 plugins/socialprofiles/easysocial/*,
-plugins/socialprofiles/joomla*,
+plugins/socialprofiles/joomla/*,
 plugins/survey/*,
 plugins/system/admintools/*,
 plugins/system/advancedmodules/*,
@@ -506,7 +499,7 @@ libraries/techjoomla/remotestorage/*,
 libraries/regularlabs/*,
 libraries/sourcecoast/*,
 libraries/vendor/*,
-libraries/windwalker/*"
+libraries/windwalker/*,"
 
 IGNORE_3PD_JOOMLA_LAYOUTS="widget.*.php,"
 
@@ -517,7 +510,8 @@ laravel/*,"
 IGNORE_3PD_LIBRARIES="dompdf/*,
 hdfvr_flash/*,
 hdfvr_mp4/*,
-hdfvr/*,"
+hdfvr/*,
+money/*,"
 
 IGNORE_3PD_CLASSES="emogrifier.php,
 emogrifier_new.php,
@@ -539,6 +533,7 @@ IGNORE_TECHJOOMLA_PLUGINS="plugins/api/*,
 plugins/system/qtcamazon_easycheckout/signature/*,
 plugins/techjoomlaAPI/Yahoo/plug_techjoomlaAPI_yahoo/lib/OAuth.php,
 plugins/tjevents/plug_tjevents_adobeconnect/plug_tjevents_adobeconnect/libraries/*,
+plugins/tjdocument/boxapi2/lib/*,
 plugins/tjvideo/kpoint/assets/*,
 plugins/search/acmanager/*,"
 
@@ -567,7 +562,7 @@ components/com_importer/*,"
 
 IGNORE_SERVICE_PROJECTS_MODULES="modules/mod_osianbreadcrumbs/*,"
 
-IGNORE_SERVICE_PROJECTS_PLUGINS="plugins/system/savedata/,"
+IGNORE_SERVICE_PROJECTS_PLUGINS="plugins/system/savedata/*,"
 
 IGNORE_TEST_CASES_SPECIAL_FILES_FOLDERS="*/mockresponses/*"
 # ^^^ IMP - do not add trailing comma
