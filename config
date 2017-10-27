@@ -206,9 +206,7 @@ media/regularlabs/*,
 media/zoo/*,"
 
 # 3PD -> third party developers
-IGNORE_3PD_JOOMLA_COMPONENTS="administrator/components/com_regularlabsmanager/*,
-administrator/components/com_surveyforce/*,
-components/com_admintools/*,
+IGNORE_3PD_JOOMLA_COMPONENTS="components/com_admintools/*,
 components/com_advancedmodules/*,
 components/com_akeeba/*,
 components/com_akeebasubs/*,
@@ -219,6 +217,7 @@ components/com_creativeimageslider/*,
 components/com_db8options/*,
 components/com_docman/*,
 components/com_easyblog/*,
+components/com_easyblog.backup/*,
 components/com_easydiscuss/*,
 components/com_easysocial/*,
 components/com_extman/*,
@@ -235,12 +234,15 @@ components/com_komento/*,
 components/com_logman/*,
 components/com_osmap/*,
 components/com_personalprofiler/*,
+components/com_rbinstaller/*,
+components/com_regularlabsmanager/*,
 components/com_rsticketspro/*,
 components/com_payplans/*,
 components/com_rsform/*,
 components/com_seoglossary/*,
 components/com_sh404sef/*,
 components/com_surveyforce/*,
+components/com_widgetkit/*,
 components/com_zoo/*,
 components/com_zoolanders/*,"
 
@@ -357,7 +359,7 @@ modules/mod_scsocialfindus/*,
 modules/mod_sclogin/*,
 modules/mod_sp_tweet/*,
 modules/mod_ultimatetwittersidebarfeed/*,
-modules/mod_yj_pop_login/*,
+modules/mod_yj_pop_login/*,com_easyblog.backup
 modules/mod_yj_pop_login_enco/*,
 modules/mod_yj_pop_login_icb/*,
 modules/mod_zooitem/*,
@@ -376,6 +378,7 @@ plugins/content/easysocial/*,
 plugins/content/jce/*,
 plugins/content/jfbccontent/*,
 plugins/content/jw_disqus/*,
+plugins/content/jw_allvideos/*,
 plugins/content/komento/*,
 plugins/content/rokinjectmodule/*,
 plugins/content/rsform/*,
@@ -479,7 +482,10 @@ plugins/user/easydiscussusers/*,
 plugins/user/easysocial/*,
 plugins/user/jfbconnectuser/*,
 plugins/user/rsticketspro/*,
-plugins/xmap/*,"
+plugins/system/t3/*,
+plugins/xmap/*,
+plugins/system/rsticketsproreports/*,
+plugins/system/scrolltock/*,"
 
 IGNORE_3PD_JOOMLA_LIBRARIES="libraries/allediaframework/*,
 libraries/cms/*,
@@ -505,7 +511,8 @@ IGNORE_3PD_JOOMLA_LAYOUTS="widget.*.php,"
 
 IGNORE_3PD_FRAMEWORKS="codeception/tests/vendor/*,
 codeception/tests/_support/*,
-laravel/*,"
+laravel/*,
+tests/*,"
 
 IGNORE_3PD_LIBRARIES="dompdf/*,
 hdfvr_flash/*,
