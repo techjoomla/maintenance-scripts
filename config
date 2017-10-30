@@ -190,6 +190,7 @@ cli/*,
 language/*,
 log/*,
 logs/*,
+mindit/*,
 temp/*,"
 
 IGNORE_LAYOUT_FILES="layouts/*,
