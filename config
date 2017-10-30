@@ -190,7 +190,6 @@ cli/*,
 language/*,
 log/*,
 logs/*,
-mindit/*,
 temp/*,"
 
 IGNORE_LAYOUT_FILES="layouts/*,
@@ -519,6 +518,7 @@ IGNORE_3PD_LIBRARIES="dompdf/*,
 hdfvr_flash/*,
 hdfvr_mp4/*,
 hdfvr/*,
+mindit/*,
 money/*,"
 
 IGNORE_3PD_CLASSES="emogrifier.php,
