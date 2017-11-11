@@ -193,6 +193,7 @@ logs/*,
 temp/*,"
 
 IGNORE_LAYOUT_FILES="layouts/*,
+template/*,
 templates/*,
 themes/*,
 tmpl/*,"
@@ -571,8 +572,10 @@ install.php,
 script.*.php,
 script.php,"
 
-IGNORE_TECJOOMLA_SPECIAL_FILES="com_jbolo/site/helpers/helper.php,
-components/com_jbolo/helpers/helper.php,"
+IGNORE_TECJOOMLA_SPECIAL_FILES="CHANGELOG.php,
+com_jbolo/site/helpers/helper.php,
+components/com_jbolo/helpers/helper.php,
+config.php,"
 
 IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="components/com_ekcontent/defines.php,
 components/com_vi/helpers/hfdvr/avc_settings.php,"
