@@ -256,6 +256,7 @@ components/com_zoolanders/*,"
 IGNORE_3PD_JOOMLA_MODULES="administrator/modules/mod_cachecleaner/*,
 administrator/modules/mod_easysocial_info/*,
 modules/mod_bt_contentslider/*,
+modules/mod_bt_googlemaps/*,
 modules/mod_content_categorylist/*,
 modules/mod_docman_categories/*,
 modules/mod_docman_documents/*,
