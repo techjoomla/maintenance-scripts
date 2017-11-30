@@ -578,6 +578,7 @@ script.*.php,
 script.php,"
 
 IGNORE_TECJOOMLA_SPECIAL_FILES="CHANGELOG.php,
+com_emailbeautifier/admin/helper.php,
 com_jbolo/site/helpers/helper.php,
 components/com_jbolo/helpers/helper.php,
 config.php,"
