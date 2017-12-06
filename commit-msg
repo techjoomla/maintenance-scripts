@@ -15,7 +15,7 @@ echo "\033[0;33m 😊 😀  Checking commit message format \033[1;37m"
 # ((fix|ref|Issue|Task|Bug|Feature)\s*#?[0-9]*\s(chore|feat|fix|test):\s)
 
 # Regex to validate in commit msg
-commit_regex='((fix|ref|Issue|Task|Bug|Feature)\s*#?(([a-zA-Z]*-[0-9]*)|([0-9]*))\s(chore|feat|fix|test|style|refactor):\s)'
+commit_regex='((fix|ref|Issue|Task|Bug|Feature|Feedback)\s*#?(([a-zA-Z]*-[0-9]*)|([0-9]*))\s(chore|feat|fix|test|style|refactor):\s)'
 
 if ! grep -iqE "$commit_regex" "$1"; then
 	echo "\033[0;31m 😢 😭  Aborting commit. Your commit message needs to be in one of the formats. Check http://git.tekdi.net/snippets/24 for samples \033[39m" >&2
