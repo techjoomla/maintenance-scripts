@@ -557,12 +557,14 @@ components/com_tjlms/libraries/scorm/subs.php,
 components/com_tjlms/libraries/scorm/titanium.php,"
 
 IGNORE_TECHJOOMLA_PLUGINS="plugins/api/*,
+plugins/qtcshipping/qtc_zepo_orderlevel_shipping/qtc_zepo_orderlevel_shipping/qtc_zepoShipHelper.php,
+plugins/search/acmanager/*,
 plugins/system/qtcamazon_easycheckout/signature/*,
 plugins/techjoomlaAPI/Yahoo/plug_techjoomlaAPI_yahoo/lib/OAuth.php,
-plugins/tjevents/plug_tjevents_adobeconnect/plug_tjevents_adobeconnect/libraries/*,
 plugins/tjdocument/boxapi2/lib/*,
-plugins/tjvideo/kpoint/assets/*,
-plugins/search/acmanager/*,"
+plugins/tjevents/plug_tjevents_adobeconnect/plug_tjevents_adobeconnect/libraries/*,
+plugins/tjshipping/qtc_zepo_avn_shipping/qtc_zepo_avn_shipping/qtczepoShipHelper.php,
+plugins/tjvideo/kpoint/assets/*,"
 
 IGNORE_TECHJOOMLA_LAYOUTS="layouts_bs2/*,
 layouts_bs3/*,
