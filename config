@@ -21,7 +21,8 @@ PHPCS_ENCODING=utf-8
 
 # Comma-separated list of file patterns being ignored
 # Core joomla files
-IGNORE_CORE_JOOMLA_COMPONENTS="administrator/components/com_admin/*,
+IGNORE_CORE_JOOMLA_COMPONENTS="administrator/components/com_acymailing/*,
+administrator/components/com_admin/*,
 administrator/components/com_ajax/*,
 administrator/components/com_banners/*,
 administrator/components/com_cache/*,
