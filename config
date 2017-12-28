@@ -207,7 +207,8 @@ media/regularlabs/*,
 media/zoo/*,"
 
 # 3PD -> third party developers
-IGNORE_3PD_JOOMLA_COMPONENTS="components/com_acymailing/*,
+IGNORE_3PD_JOOMLA_COMPONENTS="administrator/components/com_acymailing/*,
+components/com_acymailing/*,
 components/com_admintools/*,
 components/com_advancedmodules/*,
 components/com_akeeba/*,
