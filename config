@@ -199,7 +199,8 @@ themes/*,
 tmpl/*,"
 
 # Media folders
-IGNORE_MEDIA_FOLDERS_ALL="media/com_easysocial/*,
+IGNORE_MEDIA_FOLDERS_ALL="media/com_acymailing/*,
+media/com_easysocial/*,
 media/com_easydiscuss/*,
 media/editors/*,
 media/nnframework/*,
@@ -254,7 +255,8 @@ components/com_widgetkit/*,
 components/com_zoo/*,
 components/com_zoolanders/*,"
 
-IGNORE_3PD_JOOMLA_MODULES="administrator/modules/mod_cachecleaner/*,
+IGNORE_3PD_JOOMLA_MODULES="modules/mod_acymailing/*,
+administrator/modules/mod_cachecleaner/*,
 administrator/modules/mod_easysocial_info/*,
 modules/mod_bt_contentslider/*,
 modules/mod_bt_googlemaps/*,
@@ -375,7 +377,8 @@ modules/mod_yj_pop_login_icb/*,
 modules/mod_zooitem/*,
 modules/mod_zooquickicon/*,"
 
-IGNORE_3PD_JOOMLA_PLUGINS="plugins/ajax/remoteimages/*,
+IGNORE_3PD_JOOMLA_PLUGINS="plugins/acymailing/*,
+plugins/ajax/remoteimages/*,
 plugins/akeebasubs/agreetotos/*,
 plugins/akeebasubs/reseller/*,
 plugins/authentication/easysocial/*,
