@@ -3,7 +3,7 @@
 # Description     : Config for phpcs parameters to work with pre-commit.sh
 # Author          : Manoj L <manoj_l@techjoomla.com>
 # Date            : 2014-04-11
-# Last Updated    : 2017-11-08
+# Last Updated    : 2017-12-30
 # Usage           : Add the file on the same location where pre-commit.sh exists. ie. under .git/hooks
 # ==================================================================================================
 
@@ -586,6 +586,7 @@ script.php,"
 
 IGNORE_TECJOOMLA_SPECIAL_FILES="CHANGELOG.php,
 com_emailbeautifier/admin/helper.php,
+com_jbolo/site/classes/uploadhandler.php,
 com_jbolo/site/helpers/helper.php,
 com_jbolo/site/helpers/upload.php,
 com_jgive/backend/config.php,
