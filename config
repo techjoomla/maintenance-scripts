@@ -598,7 +598,7 @@ components/com_vi/helpers/hfdvr/avc_settings.php,"
 
 IGNORE_SERVICE_PROJECTS_COMPONENTS="components/com_osian/*,
 components/com_importer/*,
-administrator/components/com_advsearch/*,"
+administrator/components/com_advsearch/*,
 components/com_advsearch/*,"
 
 IGNORE_SERVICE_PROJECTS_MODULES="modules/mod_osianbreadcrumbs/*,"
