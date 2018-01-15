@@ -201,7 +201,6 @@ tmpl/*,"
 # Media folders
 IGNORE_MEDIA_FOLDERS_ALL="media/cms/*,
 media/com_acymailing/*,
-media/com_activitystream/*,
 media/com_akeeba/*,
 media/com_appafitconfig/*,
 media/com_associations/*,
@@ -673,19 +672,11 @@ scorm_1.3.js.php,
 scormlib.php,
 configuration.php,"
 
-IGNORE_TECHJOOMLA_COMPONENTS="administrator/components/com_tjfields/*,
-administrator/components/com_tjnotifications/*,
-administrator/components/com_tjvendors/*,
-components/com_api/*,
+IGNORE_TECHJOOMLA_COMPONENTS="components/com_api/*,
 components/com_acmanager/*,
 components/com_tjlms/libraries/scorm/api.php,
 components/com_tjlms/libraries/scorm/subs.php,
-components/com_tjlms/libraries/scorm/titanium.php,
-components/com_tjfields/*,
-components/com_tjnotifications/*,
-components/com_tjvendors/*,
-components/com_jlike/*,
-components/com_jticketing/*,"
+components/com_tjlms/libraries/scorm/titanium.php,"
 
 IGNORE_TECHJOOMLA_PLUGINS="plugins/api/*,
 plugins/qtcshipping/qtc_zepo_orderlevel_shipping/qtc_zepo_orderlevel_shipping/qtc_zepoShipHelper.php,
@@ -695,11 +686,7 @@ plugins/techjoomlaAPI/*,
 plugins/tjdocument/boxapi2/lib/*,
 plugins/tjevents/plug_tjevents_adobeconnect/plug_tjevents_adobeconnect/libraries/*,
 plugins/tjshipping/qtc_zepo_avn_shipping/qtc_zepo_avn_shipping/qtczepoShipHelper.php,
-plugins/tjvideo/kpoint/assets/*,
-plugins/tjvideo/jwplayer/*,
-plugins/tjevents/*,
-plugins/tjlmsdashboard/*,
-plugins/tjsms/*,"
+plugins/tjvideo/kpoint/assets/*,"
 
 IGNORE_TECHJOOMLA_LAYOUTS="layouts_bs2/*,
 layouts_bs3/*,
