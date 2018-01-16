@@ -235,7 +235,7 @@ media/plg_system_highlight/*,
 media/plg_system_stats/*,
 media/regularlabs/*,
 media/sourcecoast/*,
-media/system/*,
+media/system/*,"
 
 # 3PD -> third party developers
 IGNORE_3PD_JOOMLA_COMPONENTS="administrator/components/com_acymailing/*,
@@ -614,7 +614,7 @@ plugins/user/rsticketspro/*,
 plugins/opengraph/*,
 plugins/osmembership/*,
 plugins/sampledata/*,
-plugins/xmap/*,
+plugins/xmap/*,"
 
 IGNORE_3PD_JOOMLA_LIBRARIES="libraries/allediaframework/*,
 libraries/cms/*,
