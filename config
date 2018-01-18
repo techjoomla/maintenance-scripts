@@ -1,4 +1,4 @@
-	# ==================================================================================================
+# ==================================================================================================
 # Title           : Config
 # Description     : Config for phpcs parameters to work with pre-commit.sh
 # Author          : Manoj L <manoj_l@techjoomla.com>
@@ -171,11 +171,8 @@ plugins/system/updatenotification/*,
 plugins/twofactorauth/totp/*,
 plugins/twofactorauth/yubikey/*,
 plugins/user/contactcreator/*,
-plugins/user/firstlogin/*,
 plugins/user/joomla/*,
-plugins/user/jomsocialuser/*,
-plugins/user/profile/*,
-plugins/user/spambotcheck/*,"
+plugins/user/profile/*,"
 
 IGNORE_JOOMLA_LIBRARIES="libraries/idna_convert/*,
 libraries/joomla/*,
@@ -627,7 +624,9 @@ plugins/user/easydiscussprofile/*,
 plugins/user/easydiscussusers/*,
 plugins/user/easysocial/*,
 plugins/user/jfbconnectuser/*,
+plugins/user/jomsocialuser/*,
 plugins/user/rsticketspro/*,
+plugins/user/spambotcheck/*,
 plugins/opengraph/*,
 plugins/osmembership/*,
 plugins/sampledata/*,
