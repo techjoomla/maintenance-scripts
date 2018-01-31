@@ -16,6 +16,7 @@ PHPCS_CODING_STANDARD=Joomla
 # Ignore warnings
 PHPCS_IGNORE_WARNINGS=0
 
+
 # Encoding
 PHPCS_ENCODING=utf-8
 
