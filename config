@@ -867,6 +867,8 @@ configuration.php,"
 
 IGNORE_TECHJOOMLA_COMPONENTS="components/com_api/*,
 components/com_acmanager/*,
+administrator/components/com_tjfields/*,
+components/com_tjfields/*,
 components/com_tjlms/libraries/scorm/api.php,
 components/com_tjlms/libraries/scorm/subs.php,
 components/com_tjlms/libraries/scorm/titanium.php,"
@@ -876,6 +878,7 @@ plugins/qtcshipping/qtc_zepo_orderlevel_shipping/qtc_zepo_orderlevel_shipping/qt
 plugins/search/acmanager/*,
 plugins/system/qtcamazon_easycheckout/signature/*,
 plugins/techjoomlaAPI/*,
+plugins/payment/*,
 plugins/tjdocument/boxapi2/lib/*,
 plugins/tjevents/plug_tjevents_adobeconnect/plug_tjevents_adobeconnect/libraries/*,
 plugins/tjshipping/qtc_zepo_avn_shipping/qtc_zepo_avn_shipping/qtczepoShipHelper.php,
