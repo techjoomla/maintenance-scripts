@@ -40,23 +40,29 @@ do
 		# Do this for all hook files - rename existing hook, symlink latest hook, set new hook as excutable
 		# Commit msg hook
 		echo 'Copying commit msg hook from' $hook_path_commit_msg
-		mv "$repo".git/hooks/commit-msg "$repo".git/hooks/commit-msg"_old"
-		ln -sf $hook_path_commit_msg "$repo".git/hooks/commit-msg
+		#mv "$repo".git/hooks/commit-msg "$repo".git/hooks/commit-msg"_old"
+		#rm "$repo".git/hooks/commit-msg"_old"
+		#ln -sf $hook_path_commit_msg "$repo".git/hooks/commit-msg
+		yes | cp $hook_path_commit_msg "$repo".git/hooks/commit-msg
 		chmod +x "$repo".git/hooks/commit-msg
 
 		# Pre-commit hook
 		echo 'Copying pre-commit hook from' $hook_path_pre_commit
-		mv "$repo".git/hooks/pre-commit "$repo".git/hooks/pre-commit"_old"
-		ln -sf $hook_path_pre_commit "$repo".git/hooks/pre-commit
+		#mv "$repo".git/hooks/pre-commit "$repo".git/hooks/pre-commit"_old"
+		#rm "$repo".git/hooks/pre-commit
+		#ln -sf $hook_path_pre_commit "$repo".git/hooks/pre-commit
+		yes | cp $hook_path_pre_commit "$repo".git/hooks/pre-commit
 		chmod +x "$repo".git/hooks/pre-commit
 
 		# Commit msg hook
 		echo 'Copying config file from    ' $hook_path_config
 		if [ -e "$repo".git/hooks/config ]; then
-			mv "$repo".git/hooks/config "$repo".git/hooks/config"_old"
-			ln -sf $hook_path_config "$repo".git/hooks/config
+			#mv "$repo".git/hooks/config "$repo".git/hooks/config"_old"
+			#rm "$repo".git/hooks/config
+			# ln -sf $hook_path_config "$repo".git/hooks/config
+			yes | cp $hook_path_config "$repo".git/hooks/config
 		else
-			yes | cp -s $hook_path_config "$repo".git/hooks/config
+			yes | cp $hook_path_config "$repo".git/hooks/config
 		fi
 		chmod +x "$repo".git/hooks/config
 	fi
