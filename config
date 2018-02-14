@@ -865,13 +865,16 @@ scorm_1.3.js.php,
 scormlib.php,
 configuration.php,"
 
-IGNORE_TECHJOOMLA_COMPONENTS="components/com_api/*,
+IGNORE_TECHJOOMLA_COMPONENTS="administrator/components/com_tjfields/*,
+components/com_api/*,
 components/com_acmanager/*,
+components/com_tjfields/*,
 components/com_tjlms/libraries/scorm/api.php,
 components/com_tjlms/libraries/scorm/subs.php,
 components/com_tjlms/libraries/scorm/titanium.php,"
 
 IGNORE_TECHJOOMLA_PLUGINS="plugins/api/*,
+plugins/payment/*,
 plugins/qtcshipping/qtc_zepo_orderlevel_shipping/qtc_zepo_orderlevel_shipping/qtc_zepoShipHelper.php,
 plugins/search/acmanager/*,
 plugins/system/qtcamazon_easycheckout/signature/*,
