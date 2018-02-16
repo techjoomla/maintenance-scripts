@@ -229,6 +229,7 @@ media/com_wrapper/*,
 media/contacts/*,
 media/contenttemplater/*,
 media/editors/*,
+media/fef/*,
 media/jce/*,
 media/joomlashine/*,
 media/jui/*,
@@ -959,4 +960,4 @@ PHPCS_IGNORE=$(echo $PHPCS_IGNORE|tr -d '\n')
 PHPCS_IGNORE=$(echo "$PHPCS_IGNORE" | sed 's/ //g')
 
 # echo "$PHPCS_IGNORE"
- 
+
