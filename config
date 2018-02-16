@@ -631,7 +631,7 @@ plugins/content/userinfo/*,
 plugins/content/zooshortcode/*,
 plugins/easyblog/autoarticle/*,
 plugins/editors-xtd/articlesanywhere/*,
-plugins/editors-xtd/contenttemplater/
+plugins/editors-xtd/contenttemplater/*,
 plugins/editors-xtd/doclink/*,
 plugins/editors-xtd/engagebox/*,
 plugins/editors-xtd/logmanlinker/*,
@@ -960,4 +960,3 @@ PHPCS_IGNORE=$(echo $PHPCS_IGNORE|tr -d '\n')
 PHPCS_IGNORE=$(echo "$PHPCS_IGNORE" | sed 's/ //g')
 
 # echo "$PHPCS_IGNORE"
-
