@@ -254,7 +254,8 @@ media/regularlabs/*,
 media/sliders/*,
 media/sourcecoast/*,
 media/system/*,
-media/tabs/*,"
+media/tabs/*,
+media/fef/*,"
 
 # 3PD -> third party developers
 IGNORE_3PD_JOOMLA_COMPONENTS="administrator/components/com_acymailing/*,
@@ -959,4 +960,4 @@ PHPCS_IGNORE=$(echo $PHPCS_IGNORE|tr -d '\n')
 PHPCS_IGNORE=$(echo "$PHPCS_IGNORE" | sed 's/ //g')
 
 # echo "$PHPCS_IGNORE"
- 
+
