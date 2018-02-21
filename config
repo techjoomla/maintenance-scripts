@@ -926,7 +926,17 @@ IGNORE_SERVICE_PROJECTS_MODULES="modules/mod_osianbreadcrumbs/*,"
 
 IGNORE_SERVICE_PROJECTS_PLUGINS="plugins/system/savedata/*,"
 
-IGNORE_TEST_CASES_SPECIAL_FILES_FOLDERS="*/mockresponses/*"
+IGNORE_TEST_CASES_SPECIAL_FILES_FOLDERS="*/mockresponses/*,"
+
+IGNORE_LARAVEL_LIBRARIES="app/*,
+artisan,
+bootstrap/*,
+config/*,
+database/*,
+public/*,
+resources/*,
+routes/*,
+server.php"
 # ^^^ IMP - do not add trailing comma
 
 # Combine all
@@ -954,6 +964,9 @@ PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_SERVICE_PROJECTS_SPECIAL_FILES}
 
 # Service project components
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_SERVICE_PROJECTS_COMPONENTS}${IGNORE_SERVICE_PROJECTS_MODULES}${IGNORE_SERVICE_PROJECTS_PLUGINS}${IGNORE_TEST_CASES_SPECIAL_FILES_FOLDERS}
+
+# Laravel Ignore
+PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_LARAVEL_LIBRARIES}
 
 # Remove \n
 PHPCS_IGNORE=$(echo $PHPCS_IGNORE|tr -d '\n')
