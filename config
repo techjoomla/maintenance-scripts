@@ -933,8 +933,8 @@ artisan,
 bootstrap/*,
 config/*,
 database/*,
-public/*.
-resources/
+public/*,
+resources/*,
 routes/*,
 server.php"
 # ^^^ IMP - do not add trailing comma
