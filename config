@@ -926,7 +926,17 @@ IGNORE_SERVICE_PROJECTS_MODULES="modules/mod_osianbreadcrumbs/*,"
 
 IGNORE_SERVICE_PROJECTS_PLUGINS="plugins/system/savedata/*,"
 
-IGNORE_TEST_CASES_SPECIAL_FILES_FOLDERS="*/mockresponses/*"
+IGNORE_TEST_CASES_SPECIAL_FILES_FOLDERS="*/mockresponses/*,"
+
+IGNORE_LARAVEL_LIBRARIES="app/*,
+artisan,
+bootstrap/*,
+config/*,
+database/*,
+public/*.
+resources/
+routes/*,
+server.php"
 # ^^^ IMP - do not add trailing comma
 
 # Combine all
@@ -934,6 +944,9 @@ IGNORE_TEST_CASES_SPECIAL_FILES_FOLDERS="*/mockresponses/*"
 PHPCS_IGNORE=${IGNORE_CORE_JOOMLA_COMPONENTS}${IGNORE_CORE_JOOMLA_MODULES}${IGNORE_CORE_JOOMLA_PLUGINS}
 # Core joomla other + lib + layout files
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_JOOMLA_LIBRARIES}${IGNORE_CORE_JOOMLA_OTHER_FILES}${IGNORE_LAYOUT_FILES}
+
+# Laravel Ignore
+PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_LARAVEL_LIBRARIES}
 
 # Media folders
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_MEDIA_FOLDERS_ALL}
