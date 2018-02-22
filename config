@@ -74,6 +74,7 @@ components/com_weblinks/*,
 components/com_wrapper/*,"
 
 IGNORE_CORE_JOOMLA_MODULES="administrator/modules/mod_custom/*,
+administrator/modules/mod_addtomenu/*,
 administrator/modules/mod_feed/*,
 administrator/modules/mod_latest/*,
 administrator/modules/mod_logged/*,
