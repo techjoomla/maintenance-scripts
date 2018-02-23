@@ -383,8 +383,8 @@ components/com_widgetkit/*,
 components/com_zoo/*,
 components/com_zoolanders/*,"
 
-IGNORE_3PD_JOOMLA_MODULES="administrator/modules/mod_cachecleaner/*,
-administrator/modules/mod_addtomenu/*,
+IGNORE_3PD_JOOMLA_MODULES="administrator/modules/mod_addtomenu/*,
+administrator/modules/mod_cachecleaner/*,
 administrator/modules/mod_cloudaccess/*,
 administrator/modules/mod_easysocial_info/*,
 administrator/modules/mod_imageshow_quickicon/*,
@@ -593,8 +593,8 @@ modules/mod_zooquickicon/*,"
 
 IGNORE_3PD_JOOMLA_PLUGINS="plugins/acymailing/*,
 plugins/acysms/*,
-plugins/ajax/remoteimages/*,
 plugins/ajax/eprivacy/*,
+plugins/ajax/remoteimages/*,
 plugins/akeebasubs/agreetotos/*,
 plugins/akeebasubs/reseller/*,
 plugins/alphauserpoints/*,
