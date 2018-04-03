@@ -856,6 +856,7 @@ plugins/xmap/*,"
 
 IGNORE_3PD_JOOMLA_LIBRARIES="libraries/allediaframework/*,
 libraries/cms/*,
+libraries/cjlib/*,
 libraries/compojoom/*,
 libraries/f0f/*,
 libraries/fof/*,
