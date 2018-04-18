@@ -16,7 +16,6 @@ PHPCS_CODING_STANDARD=Joomla
 # Ignore warnings
 PHPCS_IGNORE_WARNINGS=0
 
-
 # Encoding
 PHPCS_ENCODING=utf-8
 
@@ -769,6 +768,7 @@ plugins/system/arsjed/*,
 plugins/system/articlesanywhere/*,
 plugins/system/as2cocollation/*,
 plugins/system/asexpirationcontrol/*,
+plugins/system/asexpirationnotify/*,
 plugins/system/asfixrenewalsflag/*,
 plugins/system/aslogoutuser/*,
 plugins/system/aspaypalcollation/*,
@@ -864,6 +864,7 @@ plugins/system/zoo_zlelements/*,
 plugins/system/zooevent/*,
 plugins/uniform/*,
 plugins/user/acymailinglistcreation/*,
+plugins/user/aslogoutuser/*,
 plugins/user/easyblogusers/*,
 plugins/user/easydiscussprofile/*,
 plugins/user/easydiscussusers/*,
