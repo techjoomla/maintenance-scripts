@@ -746,7 +746,7 @@ plugins/opengraph/easysocial/*,
 plugins/osmap/*,
 plugins/osmembership/*,
 plugins/payplans/*,
-plugins/payplansmigration/*,src/plugins/finder/ats
+plugins/payplansmigration/*,
 plugins/payplansregistration/*,
 plugins/quickicon/akeebabackup/*,
 plugins/quickicon/altauserpointsicon/*,
