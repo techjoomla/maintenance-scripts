@@ -24,7 +24,7 @@
  */
 
 /**
- * Display the view
+ * Display the use of command
  *
  * @param   string  $command  The command name
  *
