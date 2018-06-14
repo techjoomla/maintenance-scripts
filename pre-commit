@@ -79,7 +79,7 @@ then
 	echo "\033[0;33m############  Running Code Sniffer Checks   ############\033[1;37m"
 
 	#/usr/bin/phpcs --standard=Joomla --encoding=utf-8 -n -p $FILES
-	$PHPCS_BIN --standard=$CODING_STANDARD --report-summary $ENCODING $IGNORE_WARNINGS -p $IGNORE $FILES
+	$PHPCS_BIN --standard=$CODING_STANDARD --report-summary $ENCODING $IGNORE_WARNINGS -p --extensions=php $IGNORE $FILES
 
 	# if last command successful. Answer is 0 which means 'yes'.
 	if [ $? != 0 ]
