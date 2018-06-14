@@ -1013,7 +1013,6 @@ src/components/com_invitex/site/inv_types/ESProfile.php,
 src/components/com_invitex/site/inv_types/JSEvent.php,
 src/components/com_invitex/site/inv_types/JSGroup.php,
 src/components/com_invitex/site/inv_types/jgive_email.php,
-src/components/com_invitex/admin/assets/elements/invite_methods.php,
 src/components/com_invitex/admin/assets/elements/openinviter.php,
 src/components/com_invitex/config_default.php,
 src/components/com_invitex/admin/assets/elements/openinviter_update.php,"
