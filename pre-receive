@@ -82,7 +82,7 @@ do
 		git show ${newrev}:${file} 1>"$TMP_DIR/source/$file" 2>/dev/null  || continue
 		echo "Processing file: $TMP_DIR/source/$file"
 
-		OUTPUT=$($PHPCS_BIN -s --standard=$PHPCS_CODING_STANDARD $ENCODING $IGNORE_WARNINGS -p $IGNORE "$TMP_DIR/source/$file")
+		OUTPUT=$($PHPCS_BIN -s --standard=$PHPCS_CODING_STANDARD $ENCODING $IGNORE_WARNINGS -p --extensions=php $IGNORE "$TMP_DIR/source/$file")
 		#OUTPUT=$($PHPCS_BIN -s --standard=$PHPCS_CODING_STANDARD --report-summary $ENCODING $IGNORE_WARNINGS -p $IGNORE "$TMP_DIR/source/$file")
 
 		if [ "$?" -ne "0" ]; then
