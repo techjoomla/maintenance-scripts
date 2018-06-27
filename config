@@ -960,6 +960,7 @@ IGNORE_3PD_LIBRARIES="dompdf/*,
 hdfvr_flash/*,
 hdfvr_mp4/*,
 hdfvr/*,
+libraries/geoip/*,
 media/rereplacer/*,
 mindit/*,
 money/*,"
