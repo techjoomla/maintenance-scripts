@@ -967,8 +967,7 @@ plugins/user/spambotcheck/*,
 plugins/user/sysplgaup_newregistered/*,
 plugins/xmap/*,"
 
-IGNORE_3PD_JOOMLA_LIBRARIES="administrator/manifests/libraries/*,
-libraries/allediaframework/*,
+IGNORE_3PD_JOOMLA_LIBRARIES="libraries/allediaframework/*,
 libraries/cms/*,
 libraries/cjlib/*,
 libraries/compojoom/*,
