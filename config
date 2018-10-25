@@ -178,7 +178,9 @@ plugins/twofactorauth/totp/*,
 plugins/twofactorauth/yubikey/*,
 plugins/user/contactcreator/*,
 plugins/user/joomla/*,
-plugins/user/profile/*,"
+plugins/user/profile/*,
+plugins/finder/*,
+plugins/editors-xtd/*,"
 
 IGNORE_JOOMLA_LIBRARIES="libraries/idna_convert/*,
 libraries/joomla/*,
@@ -326,6 +328,8 @@ administrator/components/com_sppagebuilder/*,
 administrator/components/com_uniform/*,
 administrator/components/com_uniterevolution/*,
 administrator/components/com_weblinks/*,
+administrator/components/com_edocman/*,
+administrator/components/com_gdpr/*,
 components/com_acymailing/*,
 components/com_acysms/*,
 components/com_admintools/*,
@@ -415,7 +419,9 @@ components/com_uniform/*,
 components/com_uniterevolution/*,
 components/com_widgetkit/*,
 components/com_zoo/*,
-components/com_zoolanders/*,"
+components/com_zoolanders/*,
+components/com_edocman/*,
+components/com_gdpr/*,"
 
 IGNORE_3PD_JOOMLA_MODULES="administrator/modules/mod_addtomenu/*,
 administrator/modules/mod_cachecleaner/*,
@@ -662,7 +668,10 @@ modules/mod_zoocategory/*,
 modules/mod_zoocomment/*,
 modules/mod_zooitem/*,
 modules/mod_zooquickicon/*,
-modules/mod_zootag/*,"
+modules/mod_zootag/*,
+modules/mod_edocman_documents/*,
+modules/mod_edocman_filtercategories/*,
+modules/mod_edocmancalendar/*,"
 
 IGNORE_3PD_JOOMLA_PLUGINS="plugins/acymailing/*,
 plugins/acysms/*,
