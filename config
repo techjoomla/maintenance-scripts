@@ -1097,7 +1097,9 @@ src/components/com_invitex/site/inv_types/JSEvent.php,
 src/components/com_invitex/site/inv_types/ESGroup.php,
 src/components/com_invitex/site/inv_types/JSGroup.php,
 src/components/com_invitex/site/inv_types/ESProfile.php,
-src/components/com_invitex/site/inv_types/jgive_email.php,"
+src/components/com_invitex/site/inv_types/jgive_email.php,
+src/components/com_jmailalerts/*,
+src/plugins/emailalerts/*,"
 
 IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="components/com_ekcontent/defines.php,
 components/com_vi/helpers/hfdvr/avc_settings.php,"
