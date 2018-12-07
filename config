@@ -1100,7 +1100,8 @@ src/components/com_invitex/site/inv_types/JSGroup.php,
 src/components/com_invitex/site/inv_types/ESProfile.php,
 src/components/com_invitex/site/inv_types/jgive_email.php,
 src/components/com_jmailalerts/*,
-src/plugins/emailalerts/*,"
+src/plugins/emailalerts/*,
+src/plugins/techjoomlaAPI/*,"
 
 IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="components/com_ekcontent/defines.php,
 components/com_vi/helpers/hfdvr/avc_settings.php,"
