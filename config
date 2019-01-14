@@ -1024,6 +1024,7 @@ libraries/cms.php,
 libraries/import.legacy.php,
 libraries/import.php,
 libraries/loader.php,
+libraries/activity/*,
 libraries/techjoomla/*,"
 
 IGNORE_3PD_JOOMLA_LAYOUTS="widget.*.php,"
