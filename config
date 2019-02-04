@@ -88,7 +88,6 @@ administrator/modules/mod_submenu/*,
 administrator/modules/mod_title/*,
 administrator/modules/mod_toolbar/*,
 administrator/modules/mod_version/*,
-modules/mod_tjfields_search/*,
 modules/mod_articles_archive/*,
 modules/mod_articles_categories/*,
 modules/mod_articles_category/*,
@@ -1145,8 +1144,8 @@ components/com_osian/*,
 components/com_appafit/*,
 components/com_appafitconfig/*,"
 
-IGNORE_SERVICE_PROJECTS_MODULES="modules/mod_tjfields_search/*,
-modules/mod_osianbreadcrumbs/*,"
+IGNORE_SERVICE_PROJECTS_MODULES="modules/mod_osianbreadcrumbs/*,
+modules/mod_tjfields_search/*,"
 
 IGNORE_SERVICE_PROJECTS_PLUGINS="plugins/system/savedata/*,"
 
