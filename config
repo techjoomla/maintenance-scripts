@@ -69,7 +69,6 @@ components/com_newsfeeds/*,
 components/com_privacy/*,
 components/com_search/*,
 components/com_tags/*,
-components/com_tjreports/*,
 components/com_users/*,
 components/com_weblinks/*,
 components/com_wrapper/*,"
@@ -1065,6 +1064,14 @@ configuration.php,"
 
 IGNORE_TECHJOOMLA_COMPONENTS="administrator/components/com_tjfields/*,
 administrator/components/com_jlike/*,
+administrator/components/com_sa/*,
+administrator/components/com_socialads/*,
+administrator/components/com_tjfields/*,
+administrator/components/com_tjprivacy/*,
+components/com_sa/*,
+components/com_socialads/*
+components/com_tjfields/*,
+components/com_tjprivacy/*,
 components/com_api/*,
 components/com_acmanager/*,
 components/com_tjfields/*,
@@ -1075,6 +1082,7 @@ components/com_jlike/*,"
 
 IGNORE_TECHJOOMLA_PLUGINS="plugins/api/*,
 plugins/payment/*,
+plugins/privacy/*,
 plugins/qtcshipping/qtc_zepo_orderlevel_shipping/qtc_zepo_orderlevel_shipping/qtc_zepoShipHelper.php,
 plugins/search/acmanager/*,
 plugins/system/qtcamazon_easycheckout/signature/*,
@@ -1136,7 +1144,8 @@ components/com_osian/*,
 components/com_appafit/*,
 components/com_appafitconfig/*,"
 
-IGNORE_SERVICE_PROJECTS_MODULES="modules/mod_osianbreadcrumbs/*,"
+IGNORE_SERVICE_PROJECTS_MODULES="modules/mod_osianbreadcrumbs/*,
+modules/mod_tjfields_search/*,"
 
 IGNORE_SERVICE_PROJECTS_PLUGINS="plugins/system/savedata/*,"
 
