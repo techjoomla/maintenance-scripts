@@ -232,6 +232,7 @@ media/com_osmap/*,
 media/com_osmembership/*,
 media/com_phocagallery/*,
 media/com_rbinstaller/*,
+media/com_sa/*,
 media/com_wrapper/*,
 media/contacts/*,
 media/contenttemplater/*,
@@ -1069,7 +1070,7 @@ administrator/components/com_socialads/*,
 administrator/components/com_tjfields/*,
 administrator/components/com_tjprivacy/*,
 components/com_sa/*,
-components/com_socialads/*
+components/com_socialads/*,
 components/com_tjfields/*,
 components/com_tjprivacy/*,
 components/com_api/*,
@@ -1085,6 +1086,8 @@ plugins/payment/*,
 plugins/privacy/*,
 plugins/qtcshipping/qtc_zepo_orderlevel_shipping/qtc_zepo_orderlevel_shipping/qtc_zepoShipHelper.php,
 plugins/search/acmanager/*,
+plugins/socialadslayout/*,
+plugins/socialadspromote/*,
 plugins/system/qtcamazon_easycheckout/signature/*,
 plugins/techjoomlaAPI/*,
 plugins/tjdocument/boxapi2/lib/*,
@@ -1144,8 +1147,11 @@ components/com_osian/*,
 components/com_appafit/*,
 components/com_appafitconfig/*,"
 
+
 IGNORE_SERVICE_PROJECTS_MODULES="modules/mod_osianbreadcrumbs/*,
+modules/mod_socialads/*,
 modules/mod_tjfields_search/*,"
+
 
 IGNORE_SERVICE_PROJECTS_PLUGINS="plugins/system/savedata/*,"
 
