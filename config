@@ -1020,7 +1020,9 @@ plugins/user/spambotcheck/*,
 plugins/user/sysplgaup_newregistered/*,
 plugins/xmap/*,"
 
-IGNORE_3PD_JOOMLA_LIBRARIES="libraries/allediaframework/*,
+IGNORE_3PD_JOOMLA_LIBRARIES="media/vendors/otphp/*,
+media/com_tjlms/vendors/otphp/*,
+libraries/allediaframework/*,
 libraries/cms/*,
 libraries/cjlib/*,
 libraries/compojoom/*,
