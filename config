@@ -1081,6 +1081,7 @@ configuration.php,"
 
 IGNORE_TECHJOOMLA_COMPONENTS="administrator/components/com_tjfields/*,
 administrator/components/com_jlike/*,
+administrator/components/com_tmt/*,
 administrator/components/com_sa/*,
 administrator/components/com_socialads/*,
 administrator/components/com_tjfields/*,
@@ -1095,7 +1096,8 @@ components/com_tjfields/*,
 components/com_tjlms/libraries/scorm/api.php,
 components/com_tjlms/libraries/scorm/subs.php,
 components/com_tjlms/libraries/scorm/titanium.php,
-components/com_jlike/*,"
+components/com_jlike/*,
+components/com_tmt/*,"
 
 IGNORE_TECHJOOMLA_PLUGINS="plugins/api/*,
 plugins/payment/*,
