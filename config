@@ -266,6 +266,7 @@ media/sourcecoast/*,
 media/system/*,
 media/tabs/*,
 media/techjoomla_strapper/strapper.php,
+media/tjqueue/lib/*,
 media/zoo/*,"
 
 # 3PD -> third party developers
