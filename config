@@ -1099,6 +1099,7 @@ administrator/components/com_sa/*,
 administrator/components/com_socialads/*,
 administrator/components/com_tjfields/*,
 administrator/components/com_tjprivacy/*,
+administrator/components/com_tjqueue/libraries/*,
 components/com_sa/*,
 components/com_socialads/*,
 components/com_tjfields/*,
@@ -1110,7 +1111,8 @@ components/com_tjlms/libraries/scorm/api.php,
 components/com_tjlms/libraries/scorm/subs.php,
 components/com_tjlms/libraries/scorm/titanium.php,
 components/com_jlike/*,
-components/com_tmt/*,"
+components/com_tmt/*,
+components/com_tjqueue/tjqueue.php,"
 
 IGNORE_TECHJOOMLA_PLUGINS="plugins/api/*,
 plugins/payment/*,
