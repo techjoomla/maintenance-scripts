@@ -1076,7 +1076,7 @@ libraries/import.legacy.php,
 libraries/import.php,
 libraries/loader.php,
 libraries/activity/*,
-libraries/techjoomla/*,"
+libraries/techjoomla/dompdf/*,"
 
 IGNORE_3PD_JOOMLA_LAYOUTS="widget.*.php,"
 
