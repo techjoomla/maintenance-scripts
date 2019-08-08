@@ -189,6 +189,8 @@ libraries/joomla/*,
 libraries/phpass/*,
 libraries/php-encryption/*,
 libraries/phputf8/*,
+libraries/simplepie/*,
+
 libraries/vendor/composer/*,
 libraries/vendor/joomla/*,
 libraries/src/*,"
