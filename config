@@ -1185,7 +1185,8 @@ src/com_socialads/site/helpers/engine.php,
 src/plugins/emailalerts/*,
 src/plugins/techjoomlaAPI/*,"
 
-IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="components/com_ekcontent/defines.php,
+IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="code-archieve/joomla-1.5-based/*,
+components/com_ekcontent/defines.php,
 components/com_vi/helpers/hfdvr/avc_settings.php,"
 
 IGNORE_SERVICE_PROJECTS_COMPONENTS="administrator/components/com_advsearch/*,
