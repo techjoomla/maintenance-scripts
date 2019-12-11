@@ -1127,7 +1127,7 @@ libraries/import.php,
 libraries/loader.php,
 libraries/activity/*,
 libraries/techjoomla/dompdf/*,
-libraries/tjmaxmind/maxmind/vendor/*,
+lib_tjmaxmind/maxmind/vendor/*,
 libraries/tjphpoffice/*,"
 
 IGNORE_3PD_JOOMLA_LAYOUTS="widget.*.php,"
