@@ -202,6 +202,7 @@ cli/*,
 language/*,
 log/*,
 logs/*,
+stubs.php,
 temp/*,"
 
 IGNORE_LAYOUT_FILES="layouts/*,
