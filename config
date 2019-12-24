@@ -1136,7 +1136,8 @@ libraries/loader.php,
 libraries/activity/*,
 libraries/techjoomla/dompdf/*,
 lib_tjmaxmind/maxmind/*,
-libraries/tjphpoffice/*,"
+libraries/tjphpoffice/*,
+libraries/tjmustache/*,"
 
 IGNORE_3PD_JOOMLA_LAYOUTS="widget.*.php,"
 
