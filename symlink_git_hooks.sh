@@ -13,27 +13,27 @@ git_root_dir=$HOME"/GIT";
 cd $git_root_dir
 
 # If hooks repo not found, clone it first
-if [ ! -d "phpcs-hooks" ]; then
+if [ ! -d "maintenance-scripts" ]; then
 	echo "PHPCS hooks repo not found"
 	echo "Cloning PHPCS hooks repo"
-git clone git@git.tekdi.net:techjoomla/phpcs-hooks.git phpcs-hooks
+git clone git@github.com:techjoomla/maintenance-scripts.git
 else
 	echo "PHPCS hooks repo found"
 	echo "Getting latest PHPCS hooks code"
-	cd phpcs-hooks
+	cd maintenance-scripts
 	git pull
 	cd ..
 fi
 
 # Define hooks paths to symlink
-hook_path_commit_msg="${git_root_dir}/phpcs-hooks/commit-msg"
-hook_path_pre_commit="${git_root_dir}/phpcs-hooks/pre-commit"
-hook_path_config="${git_root_dir}/phpcs-hooks/config"
+hook_path_commit_msg="${git_root_dir}/maintenance-scripts/commit-msg"
+hook_path_pre_commit="${git_root_dir}/maintenance-scripts/pre-commit"
+hook_path_config="${git_root_dir}/maintenance-scripts/config"
 
 # Get all git repos in git repos folder
 for repo in $(ls -d */);
 do
-	if [ $repo != "phpcs-hooks" ]; then
+	if [ $repo != "maintenance-scripts" ]; then
 		echo '\033[0;33m';
 		echo '>>> Setting up hooks in repo:' ${repo%%/} '\033[1;37m'
 
