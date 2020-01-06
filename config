@@ -1136,6 +1136,7 @@ libraries/loader.php,
 libraries/activity/*,
 libraries/techjoomla/dompdf/*,
 lib_tjmaxmind/maxmind/*,
+libraries/tjpayment/*,
 libraries/tjphpoffice/*,
 libraries/tjmustache/*,"
 
