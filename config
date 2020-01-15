@@ -1099,10 +1099,10 @@ plugins/user/k2/*,
 plugins/user/komentousers/*,
 plugins/user/miniorangesendotp/*,
 plugins/user/samllogout/*,
+plugins/user/rdsubsuser/*,
 plugins/user/rsticketspro/*,
 plugins/user/spambotcheck/*,
 plugins/user/sysplgaup_newregistered/*,
-plugins/user/rdsubsuser/*,
 plugins/xmap/*,"
 
 IGNORE_3PD_JOOMLA_LIBRARIES="media/com_tjlms/vendors/otphp/*,
