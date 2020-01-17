@@ -1249,6 +1249,7 @@ src/components/com_invitex/site/inv_types/jgive_email.php,
 src/administrator/components/com_tjdb/models/ars2rd.php,
 administrator/components/com_tjdb/models/ars2rd.php,
 src/components/com_jmailalerts/*,
+src/components/com_quick2cart/*,
 src/com_socialads/site/helpers/engine.php,
 src/plugins/emailalerts/*,
 src/plugins/techjoomlaAPI/*,"
