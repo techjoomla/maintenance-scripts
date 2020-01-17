@@ -1208,7 +1208,7 @@ plugins/tjevents/plug_tjevents_adobeconnect/plug_tjevents_adobeconnect/libraries
 plugins/tjvideo/kpoint/assets/*,
 plugins/system/jlike_api/*,
 src/plugins/system/qtcamazon_easycheckout/*,
-src/plugins/tjshipping/qtc_zepo_avn_shipping/*,"
+src/plugins/tjshipping/qtc_zepo_avn_shipping/*,
 plugins/tjvideo/kpoint/assets/*,"
 
 IGNORE_TECHJOOMLA_LAYOUTS="layouts_bs2/*,
