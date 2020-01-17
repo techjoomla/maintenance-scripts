@@ -1206,7 +1206,9 @@ plugins/tjdocument/boxapi/boxapi/*,
 plugins/tjevents/plug_tjevents_adobeconnect/plug_tjevents_adobeconnect/libraries/*,
 plugins/tjshipping/qtc_zepo_avn_shipping/qtc_zepo_avn_shipping/qtczepoShipHelper.php,
 plugins/tjvideo/kpoint/assets/*,
-plugins/system/jlike_api/*,"
+plugins/system/jlike_api/*,
+src/plugins/system/qtcamazon_easycheckout/*,
+src/plugins/tjshipping/qtc_zepo_avn_shipping/*,"
 
 IGNORE_TECHJOOMLA_LAYOUTS="layouts_bs2/*,
 layouts_bs3/*,
@@ -1249,9 +1251,7 @@ administrator/components/com_tjdb/models/ars2rd.php,
 src/components/com_jmailalerts/*,
 src/com_socialads/site/helpers/engine.php,
 src/plugins/emailalerts/*,
-src/plugins/system/qtcamazon_easycheckout/*,
-src/plugins/techjoomlaAPI/*,
-src/plugins/tjshipping/qtc_zepo_avn_shipping/*,"
+src/plugins/techjoomlaAPI/*,"
 
 IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="code-archieve/joomla-1.5-based/*,
 components/com_ekcontent/defines.php,
