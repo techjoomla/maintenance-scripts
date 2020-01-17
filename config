@@ -1249,7 +1249,9 @@ administrator/components/com_tjdb/models/ars2rd.php,
 src/components/com_jmailalerts/*,
 src/com_socialads/site/helpers/engine.php,
 src/plugins/emailalerts/*,
-src/plugins/techjoomlaAPI/*,"
+src/plugins/system/qtcamazon_easycheckout/*,
+src/plugins/techjoomlaAPI/*,
+src/plugins/tjshipping/qtc_zepo_avn_shipping/*,"
 
 IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="code-archieve/joomla-1.5-based/*,
 components/com_ekcontent/defines.php,
