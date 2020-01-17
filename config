@@ -1205,8 +1205,10 @@ plugins/techjoomlaAPI/*,
 plugins/tjdocument/boxapi2/lib/*,
 plugins/tjdocument/boxapi/boxapi/*,
 plugins/tjevents/plug_tjevents_adobeconnect/plug_tjevents_adobeconnect/libraries/*,
-plugins/tjshipping/qtc_zepo_avn_shipping/*,
-plugins/tjvideo/kpoint/assets/*,"
+plugins/tjvideo/kpoint/assets/*,
+plugins/system/jlike_api/*,
+src/plugins/system/qtcamazon_easycheckout/*,
+src/plugins/tjshipping/qtc_zepo_avn_shipping/*,"
 
 IGNORE_TECHJOOMLA_LAYOUTS="layouts_bs2/*,
 layouts_bs3/*,
@@ -1247,6 +1249,7 @@ src/components/com_invitex/site/inv_types/jgive_email.php,
 src/administrator/components/com_tjdb/models/ars2rd.php,
 administrator/components/com_tjdb/models/ars2rd.php,
 src/components/com_jmailalerts/*,
+src/components/com_quick2cart/*,
 src/com_socialads/site/helpers/engine.php,
 src/plugins/emailalerts/*,
 src/plugins/techjoomlaAPI/*,"
