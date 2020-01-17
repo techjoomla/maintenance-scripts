@@ -1199,14 +1199,14 @@ plugins/qtcshipping/qtc_zepo_orderlevel_shipping/qtc_zepo_orderlevel_shipping/qt
 plugins/search/acmanager/*,
 plugins/socialadslayout/*,
 plugins/socialadspromote/*,
-plugins/system/qtcamazon_easycheckout/signature/*,
+plugins/system/jlike_api/*,
+plugins/system/qtcamazon_easycheckout/*,
 plugins/techjoomlaAPI/*,
 plugins/tjdocument/boxapi2/lib/*,
 plugins/tjdocument/boxapi/boxapi/*,
 plugins/tjevents/plug_tjevents_adobeconnect/plug_tjevents_adobeconnect/libraries/*,
-plugins/tjshipping/qtc_zepo_avn_shipping/qtc_zepo_avn_shipping/qtczepoShipHelper.php,
-plugins/tjvideo/kpoint/assets/*,
-plugins/system/jlike_api/*,"
+plugins/tjshipping/qtc_zepo_avn_shipping/*,
+plugins/tjvideo/kpoint/assets/*,"
 
 IGNORE_TECHJOOMLA_LAYOUTS="layouts_bs2/*,
 layouts_bs3/*,
