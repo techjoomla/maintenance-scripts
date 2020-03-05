@@ -1280,7 +1280,7 @@ IGNORE_SERVICE_PROJECTS_PLUGINS="plugins/system/savedata/*,"
 
 IGNORE_TEST_CASES_SPECIAL_FILES_FOLDERS="*/mockresponses/*,"
 
-IGNORE_WORDPRESS_TECHWORDPRESS_PRODUCTS="*/tnc-mananger/src/wpboot/vendor/*,"
+IGNORE_WORDPRESS_TECHWORDPRESS_PRODUCTS="*/src/wpboot/vendor/*,"
 
 IGNORE_LARAVEL_LIBRARIES="app/*,
 artisan,
