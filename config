@@ -343,6 +343,7 @@ administrator/components/com_profileurl/*,
 administrator/components/com_quicklogout/*,
 administrator/components/com_quix/*,
 administrator/components/com_rbinstaller/*,
+administrator/components/com_rdsubs/*,
 administrator/components/com_redirectonlogin/*,
 administrator/components/com_rereplacer/*,
 administrator/components/com_sexypolling/*,
@@ -1279,6 +1280,8 @@ IGNORE_SERVICE_PROJECTS_PLUGINS="plugins/system/savedata/*,"
 
 IGNORE_TEST_CASES_SPECIAL_FILES_FOLDERS="*/mockresponses/*,"
 
+IGNORE_WORDPRESS_TECHWORDPRESS_PRODUCTS="*/src/wpboot/vendor/*,"
+
 IGNORE_LARAVEL_LIBRARIES="app/*,
 artisan,
 bootstrap/*,
@@ -1315,6 +1318,9 @@ PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_SERVICE_PROJECTS_SPECIAL_FILES}
 
 # Service project components
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_SERVICE_PROJECTS_COMPONENTS}${IGNORE_SERVICE_PROJECTS_MODULES}${IGNORE_SERVICE_PROJECTS_PLUGINS}${IGNORE_TEST_CASES_SPECIAL_FILES_FOLDERS}
+
+# Techwordpress plugins ignore
+PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_WORDPRESS_TECHWORDPRESS_PRODUCTS}
 
 # Laravel Ignore
 PHPCS_IGNORE=${PHPCS_IGNORE}${IGNORE_LARAVEL_LIBRARIES}
