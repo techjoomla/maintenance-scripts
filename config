@@ -1170,8 +1170,8 @@ libraries/techjoomla/dompdf/*,
 lib_tjmaxmind/maxmind/*,
 libraries/tjpayment/*,
 libraries/tjphpoffice/*,
-libraries/tjmustache/*,
-libraries/tjmaxmind/*,"
+libraries/tjmaxmind/*,
+libraries/tjmustache/*,"
 
 IGNORE_3PD_JOOMLA_LAYOUTS="widget.*.php,"
 
