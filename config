@@ -3,7 +3,7 @@
 # Description     : Config for phpcs parameters to work with pre-commit.sh
 # Author          : Manoj L <manoj_l@techjoomla.com>
 # Date            : 2014-04-11
-# Last Updated    : 2018-02-16
+# Last Updated    : 2020-07-31
 # Usage           : Add the file on the same location where pre-commit.sh exists. ie. under .git/hooks
 # ==================================================================================================
 
@@ -1245,6 +1245,7 @@ plugins/tjevents/zoom/zoom/firebase/*,
 plugins/tjpush/google_fcm/vendor/*,
 plugins/tjvideo/kpoint/assets/*,
 plugins/system/jlike_api/*,
+plugins/system/tjtotp/vendor/*,
 src/plugins/system/qtcamazon_easycheckout/*,
 src/plugins/tjshipping/qtc_zepo_avn_shipping/*,"
 
@@ -1305,11 +1306,9 @@ components/com_osian/*,
 components/com_appafit/*,
 components/com_appafitconfig/*,"
 
-
 IGNORE_SERVICE_PROJECTS_MODULES="modules/mod_osianbreadcrumbs/*,
 modules/mod_socialads/*,
 modules/mod_tjfields_search/*,"
-
 
 IGNORE_SERVICE_PROJECTS_PLUGINS="plugins/system/savedata/*,"
 
