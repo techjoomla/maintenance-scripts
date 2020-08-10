@@ -3,7 +3,7 @@
 # Description     : Config for phpcs parameters to work with pre-commit.sh
 # Author          : Manoj L <manoj_l@techjoomla.com>
 # Date            : 2014-04-11
-# Last Updated    : 2020-07-31
+# Last Updated    : 2020-08-10
 # Usage           : Add the file on the same location where pre-commit.sh exists. ie. under .git/hooks
 # ==================================================================================================
 
@@ -1223,6 +1223,8 @@ components/com_tjfields/*,
 components/com_tjlms/libraries/scorm/api.php,
 components/com_tjlms/libraries/scorm/subs.php,
 components/com_tjlms/libraries/scorm/titanium.php,
+components/com_tjlogin/libraries/otphp/*,
+components/com_tjlogin/site/libraries/otphp/*,
 components/com_tjvendors/*,
 components/com_jlike/*,
 components/com_tmt/*,
@@ -1246,7 +1248,6 @@ plugins/tjevents/zoom/zoom/firebase/*,
 plugins/tjpush/google_fcm/vendor/*,
 plugins/tjvideo/kpoint/assets/*,
 plugins/system/jlike_api/*,
-plugins/system/tjtotp/vendor/*,
 src/plugins/system/qtcamazon_easycheckout/*,
 src/plugins/tjshipping/qtc_zepo_avn_shipping/*,"
 
