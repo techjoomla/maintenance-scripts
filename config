@@ -1179,9 +1179,11 @@ libraries/import.php,
 libraries/loader.php,
 libraries/activity/*,
 libraries/techjoomla/dompdf/*,
+lib_tjfpdi/fpdi/*,
 lib_tjmaxmind/maxmind/*,
 libraries/tjpayment/*,
 libraries/tjphpoffice/*,
+libraries/tjfpdi/*,
 libraries/tjmaxmind/*,
 libraries/tjmustache/*,"
 
