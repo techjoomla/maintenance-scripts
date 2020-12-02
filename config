@@ -771,6 +771,7 @@ modules/mod_zootag/*,"
 
 IGNORE_3PD_JOOMLA_PLUGINS="plugins/acymailing/*,
 plugins/acysms/*,
+plugins/ajax/cookiespolicynotificationbar/*
 plugins/ajax/eprivacy/*,
 plugins/ajax/fileupload/*,
 plugins/ajax/helix3/*,
