@@ -37,18 +37,18 @@ https://github.com/techjoomla/maintenance-scripts/blob/master/symlink_git_hooks.
 
 #### Proposed repos strucure as below
 
-- /home/manoj/GIT/
+- ~/GIT/
   - maintenance-scripts/ (https://github.com/techjoomla/maintenance-scripts)
-- /home/manoj/GIT/techjoomla-repos/
+- ~/GIT/techjoomla-repos/
   - repo1/
   - repo2/
-- /home/manoj/GIT/manoj-repos/
+- ~/GIT/manoj-repos/
   - repo1/
   - repo2/
   
 #### Steps
 - Make sure this repo itself is located (cloned) at different location
-- Then edit and update above .sh file to specify git repos path eg: /home/manoj/GIT/techjoomla-repos/
-- and run `sh /home/manoj/GIT/symlink_git_hooks.sh`
+- Then edit and update `~/GIT/maintenance-scripts/symlink_git_hooks.sh` file to specify git repos path eg: `~/GIT/techjoomla-repos/`
+- and run `sh ~/GIT/maintenance-scripts/symlink_git_hooks.sh`
 
-This will add above phpcs config file, pre-commit, commit-msg hooks into all your local repos located in folder  /home/manoj/GIT/techjoomla-repos/
+This will add above phpcs config file, pre-commit, commit-msg hooks into all your local repos located in folder  `~/GIT/techjoomla-repos/`
