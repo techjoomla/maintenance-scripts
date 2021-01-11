@@ -35,7 +35,7 @@ That's it - you will start seeing invalid commit msg errors if you don't follow 
 You can use this script to symlink phpcs config, hooks in local git repos in one go
 https://github.com/techjoomla/maintenance-scripts/blob/master/symlink_git_hooks.sh
 
-Proposed repos strucure as below
+#### Proposed repos strucure as below
 
 - /home/manoj/GIT/
   - maintenance-scripts/ (https://github.com/techjoomla/maintenance-scripts)
@@ -46,7 +46,7 @@ Proposed repos strucure as below
   - repo1/
   - repo2/
   
-  Steps
+#### Steps
 - Make sure this repo itself is located (cloned) at different location
 - Then edit and update above .sh file to specify git repos path eg: /home/manoj/GIT/techjoomla-repos/
 - and run `sh /home/manoj/GIT/symlink_git_hooks.sh`
