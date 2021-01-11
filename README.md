@@ -29,3 +29,26 @@ eg- If I have cloned `jbolo` git repo at location `/home/manoj/GIT/jbolo/` then 
 That's it - you will start seeing invalid commit msg errors if you don't follow commit message format.
 
 ### Sooner the better!
+
+## Symlink phpcs hooks, config in all of your local repos
+
+You can use this script to symlink phpcs config, hooks in local git repos in one go
+https://github.com/techjoomla/maintenance-scripts/blob/master/symlink_git_hooks.sh
+
+#### Proposed repos strucure as below
+
+- ~/GIT/
+  - maintenance-scripts/ (https://github.com/techjoomla/maintenance-scripts)
+- ~/GIT/techjoomla-repos/
+  - repo1/
+  - repo2/
+- ~/GIT/manoj-repos/
+  - repo1/
+  - repo2/
+  
+#### Steps
+- Make sure this repo itself is located (cloned) at different location
+- Then edit and update `~/GIT/maintenance-scripts/symlink_git_hooks.sh` file to specify git repos path eg: `~/GIT/techjoomla-repos/`
+- and run `sh ~/GIT/maintenance-scripts/symlink_git_hooks.sh`
+
+This will add above phpcs config file, pre-commit, commit-msg hooks into all your local repos located in folder  `~/GIT/techjoomla-repos/`
