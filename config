@@ -489,8 +489,7 @@ src/administrator/components/com_xmap/*,
 src/cat_sub/*,
 src/components/com_affiliatetracker/*,
 src/components/com_ctransifex/*,
-src/components/com_xmap/*,
-src/libraries/view.schema.php"
+src/components/com_xmap/*"
 
 IGNORE_3PD_JOOMLA_MODULES="administrator/modules/mod_addtomenu/*,
 administrator/modules/mod_cachecleaner/*,
@@ -1240,7 +1239,8 @@ libraries/tjpayment/*,
 libraries/tjphpoffice/*,
 libraries/tjfpdi/*,
 libraries/tjmaxmind/*,
-libraries/tjmustache/*,"
+libraries/tjmustache/*,
+src/libraries/view.schema.php"
 
 IGNORE_3PD_JOOMLA_LAYOUTS="widget.*.php,"
 
