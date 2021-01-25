@@ -1232,7 +1232,8 @@ IGNORE_3PD_LIBRARIES="dompdf/*,
 */media/sh404sef/*,
 */media/strapper30/*,
 */mindit/*,
-*/money/*,"
+*/money/*,
+*/zoho/*,"
 
 IGNORE_3PD_CLASSES="emogrifier.php,
 */emogrifier_new.php,
