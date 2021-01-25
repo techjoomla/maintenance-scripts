@@ -1232,7 +1232,8 @@ IGNORE_3PD_LIBRARIES="dompdf/*,
 */media/sh404sef/*,
 */media/strapper30/*,
 */mindit/*,
-*/money/*,"
+*/money/*,
+*/zoho/*,"
 
 IGNORE_3PD_CLASSES="emogrifier.php,
 */emogrifier_new.php,
@@ -1242,7 +1243,10 @@ IGNORE_3PD_CLASSES="emogrifier.php,
 */scorm_1.2.js.php,
 */scorm_1.3.js.php,
 */scormlib.php,
-*/configuration.php,"
+*/configuration.php,
+*/zoho_app.php,
+*/zoho_generateToken.php,
+*/zoho_redirect.php"
 
 IGNORE_TECHJOOMLA_COMPONENTS="*/administrator/components/com_jlike/*,
 */administrator/components/com_quick2cart/*,
