@@ -1243,10 +1243,7 @@ IGNORE_3PD_CLASSES="emogrifier.php,
 */scorm_1.2.js.php,
 */scorm_1.3.js.php,
 */scormlib.php,
-*/configuration.php,
-*/zoho_app.php,
-*/zoho_generateToken.php,
-*/zoho_redirect.php"
+*/configuration.php,"
 
 IGNORE_TECHJOOMLA_COMPONENTS="*/administrator/components/com_jlike/*,
 */administrator/components/com_quick2cart/*,
