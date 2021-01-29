@@ -1234,10 +1234,6 @@ IGNORE_3PD_LIBRARIES="dompdf/*,
 */media/strapper30/*,
 */mindit/*,
 */money/*,
-<<<<<<< HEAD
-=======
-*/zoho/*,"
->>>>>>> 42c7fa70acc4c0758be07b4050560934cb099b2e
 
 IGNORE_3PD_CLASSES="emogrifier.php,
 */emogrifier_new.php,
