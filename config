@@ -475,7 +475,7 @@ IGNORE_3PD_JOOMLA_COMPONENTS="*/administrator/components/com_acym/*,
 */components/com_zoo/*,
 */components/com_zoolanders/*,"
 
-IGNORE_3PD_JOOMLA_MODULES="/*administrator/modules/mod_addtomenu/*,
+IGNORE_3PD_JOOMLA_MODULES="*/administrator/modules/mod_addtomenu/*,
 */administrator/modules/mod_akeebasubs/*,
 */administrator/modules/mod_cachecleaner/*,
 */administrator/modules/mod_cloudaccess/*,
