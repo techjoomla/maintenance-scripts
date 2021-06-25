@@ -3,7 +3,7 @@
 # Description     : Config for phpcs parameters to work with pre-commit.sh
 # Author          : Manoj L <manoj_l@techjoomla.com>
 # Date            : 2014-04-11
-# Last Updated    : 2020-08-10
+# Last Updated    : 2021-06-25
 # Usage           : Add the file on the same location where pre-commit.sh exists. ie. under .git/hooks
 # ==================================================================================================
 
@@ -1252,7 +1252,8 @@ IGNORE_3PD_CLASSES="emogrifier.php,
 */scorm_1.2.js.php,
 */scorm_1.3.js.php,
 */scormlib.php,
-*/configuration.php,"
+*/configuration.php,
+*/configuration_*.php,"
 
 IGNORE_TECHJOOMLA_COMPONENTS="*/administrator/components/com_jlike/*,
 */administrator/components/com_quick2cart/*,
