@@ -3,7 +3,7 @@
 # Description     : Config for phpcs parameters to work with pre-commit.sh
 # Author          : Manoj L <manoj_l@techjoomla.com>
 # Date            : 2014-04-11
-# Last Updated    : 2020-08-10
+# Last Updated    : 2021-06-25
 # Usage           : Add the file on the same location where pre-commit.sh exists. ie. under .git/hooks
 # ==================================================================================================
 
@@ -22,6 +22,7 @@ PHPCS_ENCODING=utf-8
 # Comma-separated list of file patterns being ignored
 # Core joomla files
 IGNORE_CORE_JOOMLA_COMPONENTS="*/administrator/components/com_admin/*,
+*/administrator/components/com_actionlogs/*,
 */administrator/components/com_ajax/*,
 */administrator/components/com_banners/*,
 */administrator/components/com_cache/*,
@@ -475,7 +476,7 @@ IGNORE_3PD_JOOMLA_COMPONENTS="*/administrator/components/com_acym/*,
 */components/com_zoo/*,
 */components/com_zoolanders/*,"
 
-IGNORE_3PD_JOOMLA_MODULES="/*administrator/modules/mod_addtomenu/*,
+IGNORE_3PD_JOOMLA_MODULES="*/administrator/modules/mod_addtomenu/*,
 */administrator/modules/mod_akeebasubs/*,
 */administrator/modules/mod_cachecleaner/*,
 */administrator/modules/mod_cloudaccess/*,
@@ -550,6 +551,8 @@ IGNORE_3PD_JOOMLA_MODULES="/*administrator/modules/mod_addtomenu/*,
 */modules/mod_contentslider/*,
 */modules/mod_cpcategories/*,
 */modules/mod_djimageslider/*,
+*/modules/mod_djmegamenu/*,
+*/modules/mod_djmegamenu_button/*,
 */modules/mod_docman_categories/*,
 */modules/mod_docman_documents/*,
 */modules/mod_easyarticles_menu/*,
@@ -772,6 +775,8 @@ IGNORE_3PD_JOOMLA_MODULES="/*administrator/modules/mod_addtomenu/*,
 
 IGNORE_3PD_JOOMLA_PLUGINS="plugins/acymailing/*,
 */plugins/acysms/*,
+*/plugins/actionlog/admintools/*,
+*/plugins/actionlog/akeebabackup/*,
 */plugins/affiliates/*,
 */plugins/ajax/canva/*,
 */plugins/ajax/cookiespolicynotificationbar/*,
@@ -863,6 +868,7 @@ IGNORE_3PD_JOOMLA_PLUGINS="plugins/acymailing/*,
 */plugins/csviaddon/modules/*,
 */plugins/csviaddon/tags/*,
 */plugins/csviaddon/users/*,
+*/plugins/csviext/*,
 */plugins/csvirules/*,
 */plugins/datacompliance/*,
 */plugins/easyblog/autoarticle/*,
@@ -1041,6 +1047,7 @@ IGNORE_3PD_JOOMLA_PLUGINS="plugins/acymailing/*,
 */plugins/system/creativeimageslider/*,
 */plugins/system/datacompliance/*,
 */plugins/system/datacompliancecookie/*,
+*/plugins/system/djmegamenu/*,
 */plugins/system/easyarticles/*,
 */plugins/system/easysocial/*,
 */plugins/system/easysocialautologin/*,
@@ -1122,6 +1129,7 @@ IGNORE_3PD_JOOMLA_PLUGINS="plugins/acymailing/*,
 */plugins/system/regularlabs/*,
 */plugins/system/rereplacer/*,
 */plugins/system/rokextender/*,
+*/plugins/system/rolandd/*,
 */plugins/system/rsformdeletesubmissions/*,
 */plugins/system/rsfpcountry/*,
 */plugins/system/rsfprecaptchav2/*,
@@ -1191,6 +1199,7 @@ IGNORE_3PD_JOOMLA_LIBRARIES="*/libraries/activity/*,
 */libraries/f0f/*,
 */libraries/fof/*,
 */libraries/fof30/*,
+*/libraries/fof40/*,
 */libraries/gantry/*,
 */libraries/gjfields/*,
 */libraries/jforce/*,
@@ -1245,7 +1254,8 @@ IGNORE_3PD_CLASSES="emogrifier.php,
 */scorm_1.2.js.php,
 */scorm_1.3.js.php,
 */scormlib.php,
-*/configuration.php,"
+*/configuration.php,
+*/configuration_*.php,"
 
 IGNORE_TECHJOOMLA_COMPONENTS="*/administrator/components/com_jlike/*,
 */administrator/components/com_quick2cart/*,
@@ -1346,6 +1356,8 @@ IGNORE_TECHJOOMLA_LIBRARIES="*/administrator/components/com_tjqueue/libraries/*,
 */components/com_tjlogin/libraries/otphp/*,
 */components/com_tjlogin/site/libraries/otphp/*,
 */libraries/techjoomla/dompdf/*,
+*/libraries/tjbarcode/*,
+*/lib_tjbarcode/*,
 */lib_tjfpdi/fpdi/*,
 */lib_tjmaxmind/maxmind/*,
 */libraries/tjpayment/*,
@@ -1391,7 +1403,8 @@ IGNORE_TECJOOMLA_SPECIAL_FILES="*/CHANGELOG.php,
 
 IGNORE_SERVICE_PROJECTS_SPECIAL_FILES="*/code-archieve/joomla-1.5-based/*,
 */components/com_ekcontent/defines.php,
-*/components/com_vi/helpers/hfdvr/avc_settings.php,"
+*/components/com_vi/helpers/hfdvr/avc_settings.php,
+*/joomlatools-pages/*,"
 
 IGNORE_SERVICE_PROJECTS_COMPONENTS="*/administrator/components/com_advsearch/*,
 */administrator/components/com_appafit/*,
