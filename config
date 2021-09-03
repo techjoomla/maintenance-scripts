@@ -9,7 +9,6 @@
 
 # Path to phpcs "binary"
 PHPCS_BIN=/usr/bin/phpcs
-PHPCS_BIN="php5.6 /usr/bin/phpcs"
 
 # The coding standard, you can also specify a path to your own standard here
 PHPCS_CODING_STANDARD=Joomla
@@ -202,8 +201,8 @@ IGNORE_JOOMLA_LIBRARIES="*/libraries/idna_convert/*,
 */libraries/src/*,"
 
 IGNORE_CORE_JOOMLA_OTHER_FILES="*/administrator/manifests/*,
-*/api/components/com_categories/src/Controller/*,
-*/api/components/com_languages/src/View/Overrides/*,
+*/api/components/com_categories/*,
+*/api/components/com_languages/*,
 */bin/*,
 */cache/*,
 */cli/*,
