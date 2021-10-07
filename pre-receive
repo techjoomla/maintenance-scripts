@@ -1,4 +1,5 @@
 #!/bin/sh
+
 : '
 # PHP CodeSniffer pre-receive hook for git
 
@@ -72,8 +73,8 @@ phpcs --version
 
 while read oldrev newrev ref;
 do
-	#list=$(git diff-tree --name-only -r $oldrev..$newrev | grep -e '.php' -e '.phtml')
-	list=$(git diff-tree --name-only -r $oldrev..$newrev | egrep '\.(php|phtml)$')
+	#list=$(git diff-tree --name-only -r $oldrev..$newrev | grep -e ".php" -e ".phtml")
+	list=$(git diff-tree --name-only -r $oldrev..$newrev | egrep "\.(php|phtml)$")
 	# echo ${list}
 
 	for file in ${list}; do
