@@ -1,4 +1,5 @@
 #!/bin/sh
+: '
 # PHP CodeSniffer pre-receive hook for git
 
 #PHPCS_BIN="/usr/bin/phpcs"
@@ -122,3 +123,11 @@ else
 fi
 
 exit $RETVAL
+'
+
+echo "\033[0;31m"
+echo "***********************************************"
+echo "	Pre-receive Hook is currently disabled."
+echo "***********************************************"
+echo "\033[39m"
+
