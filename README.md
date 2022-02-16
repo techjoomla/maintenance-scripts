@@ -8,7 +8,7 @@ eg- If I have cloned `jbolo` git repo at location `/home/manoj/GIT/jbolo/` then 
 `/home/manoj/GIT/jbolo/.git/hooks`. Copy files into `.git/hooks` folder
 
 
-- Give executable permission to `pre-commit` file
+- Give executable permission to `pre-commit` file (command: `chmod +x pre-commit`)
 
 
 That's it - you will start seeing php compilation & phpcs errors on every git commit itself.
@@ -23,7 +23,7 @@ eg- If I have cloned `jbolo` git repo at location `/home/manoj/GIT/jbolo/` then 
 `/home/manoj/GIT/jbolo/.git/hooks`. Copy file into `.git/hooks` folder
 
 
-- Give executable permission to `commit-msg` file
+- Give executable permission to `commit-msg` file (command: `chmod +x commit-msg`)
 
 
 That's it - you will start seeing invalid commit msg errors if you don't follow commit message format.
